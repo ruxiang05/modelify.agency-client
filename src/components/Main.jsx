@@ -8,14 +8,14 @@ import Profile from './Profile';
 import NotFound from './NotFound';
 
 const Main = () => (
-    <Switch>
-        <Route path="/jobs" exact component={JobList} />
-        <Route path="/models" exact component={ModelsList} />
-        <Route path="/jobs/new" exact component={AddJob} />
-        <Route path="/chat" exact component={Chat} />
-        <Route path="/profile" exact component={Profile} />
-        <Route component={NotFound} />
-    </Switch>
+  <Switch>
+    <Route path="/jobs" exact component={JobList} />
+    <Route path="/models" exact component={ModelsList} />
+    <Route path="/jobs/new" exact component={AddJob} />
+    <Route path="/chat" exact component={Chat} />
+    <Route path="/profile" exact component={Profile} />
+    <Route component={NotFound} />
+  </Switch>
 );
 
 export default Main;
