@@ -6,6 +6,7 @@ import AddJob from './AddJob';
 import Chat from './Chat';
 import Profile from './Profile';
 import NotFound from './NotFound';
+import Signup from './Signup';
 
 const Main = () => (
   <Switch>
@@ -15,6 +16,7 @@ const Main = () => (
     <Route path="/jobs/new" component={AddJob} />
     <Route path="/chat" component={Chat} />
     <Route path="/profile" component={Profile} />
+    <Route path="/signup" component={Signup} />
     <Route component={NotFound} />
   </Switch>
 );
