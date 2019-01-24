@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../styles/form-input.scss';
 
 const FormInput = ({
   title, name, type, value, handleChange, placeholder,
 }) => (
-  <div>
+  <div className="form-input">
     <label htmlFor={name}>{title}</label>
     <input
       id={name}
