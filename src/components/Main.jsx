@@ -7,6 +7,7 @@ import Chat from './Chat';
 import Profile from './Profile';
 import NotFound from './NotFound';
 import Signup from './Signup';
+import Login from './Login';
 
 const Main = () => (
   <Switch>
@@ -17,6 +18,7 @@ const Main = () => (
     <Route path="/chat" component={Chat} />
     <Route path="/profile" component={Profile} />
     <Route path="/signup" component={Signup} />
+    <Route path="/login" component={Login} />
     <Route component={NotFound} />
   </Switch>
 );
