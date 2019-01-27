@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Main from './components/Main';
 import { UserProvider } from './contexts/userContext';
 import './styles/app.scss';
+import { getCurrentUser } from './auth';
 
 class App extends React.Component {
   constructor(props) {
@@ -15,8 +16,8 @@ class App extends React.Component {
     this.updateUser = this.updateUser.bind(this);
   }
 
-  updateUser(user) {
-    this.setState({ user });
+  updateUser() {
+    this.setState({ user: getCurrentUser() });
   }
 
   render() {
