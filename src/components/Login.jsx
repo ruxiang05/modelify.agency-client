@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import FormInput from './FormInput';
 import { UserContext } from '../contexts/userContext';
 import api from '../api';
+import { setToken } from '../auth';
 
 class Login extends React.Component {
   constructor(props) {
@@ -29,11 +30,16 @@ class Login extends React.Component {
     event.preventDefault();
     api.users
       .login(user)
-      .then((res) => {
-        if (res.ok) {
-          updateUser(user);
-          history.push('/');
+      .then((res, err) => {
+        if (err) {
+          return err;
         }
+        return res.json();
+      })
+      .then((data) => {
+        setToken(data.token);
+        updateUser();
+        history.push('/');
       })
       .catch(error => error);
   }

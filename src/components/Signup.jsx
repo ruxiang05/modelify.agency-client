@@ -4,6 +4,7 @@ import FormInput from './FormInput';
 import RadioFormInput from './RadioFormInput';
 import { UserContext } from '../contexts/userContext';
 import api from '../api';
+import { setToken } from '../auth';
 import '../styles/signup.scss';
 
 class Signup extends React.Component {
@@ -35,11 +36,25 @@ class Signup extends React.Component {
     event.preventDefault();
     api.users
       .signup(user)
-      .then((res) => {
+      .then((res, err) => {
         if (res.ok) {
-          updateUser(user);
-          history.push('/');
+          return api.users.login({
+            email: user.email,
+            password: user.password,
+          });
         }
+        return err;
+      })
+      .then((res, err) => {
+        if (err) {
+          return err;
+        }
+        return res.json();
+      })
+      .then((data) => {
+        setToken(data.token);
+        updateUser();
+        history.push('/');
       })
       .catch(error => error);
   }
