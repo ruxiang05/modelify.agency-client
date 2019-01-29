@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Main from './components/Main';
 import { UserProvider } from './contexts/userContext';
 import './styles/app.scss';
-import { getCurrentUser } from './auth';
+import { getCurrentUser, logOut } from './auth';
 
 class App extends React.Component {
   constructor(props) {
@@ -14,16 +14,22 @@ class App extends React.Component {
     };
 
     this.updateUser = this.updateUser.bind(this);
+    this.handleLogout = this.handleLogout.bind(this);
   }
 
   updateUser() {
     this.setState({ user: getCurrentUser() });
   }
 
+  handleLogout() {
+    logOut();
+    this.setState({ user: null });
+  }
+
   render() {
     const { user } = this.state;
     return (
-      <UserProvider value={{ user, updateUser: this.updateUser }}>
+      <UserProvider value={{ user, updateUser: this.updateUser, handleLogout: this.handleLogout }}>
         <div className="app">
           <Header />
           <Main />
