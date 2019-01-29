@@ -10,4 +10,8 @@ const getCurrentUser = () => {
   return null;
 };
 
-export { getToken, setToken, getCurrentUser };
+const logOut = () => localStorage.removeItem('jwt-token');
+
+export {
+  getToken, setToken, getCurrentUser, logOut,
+};
