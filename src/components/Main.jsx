@@ -8,6 +8,7 @@ import Profile from './Profile';
 import NotFound from './NotFound';
 import Signup from './Signup';
 import Login from './Login';
+import AddModel from './AddModel';
 import ProtectedRoute from './ProtectedRoute';
 
 const Main = () => (
@@ -20,6 +21,7 @@ const Main = () => (
     <ProtectedRoute path="/jobs/new" component={AddJob} />
     <ProtectedRoute path="/chat" component={Chat} />
     <ProtectedRoute path="/profile" component={Profile} />
+    <ProtectedRoute path="/add-model" component={AddModel} />
     <Route component={NotFound} />
   </Switch>
 );
