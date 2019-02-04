@@ -17,6 +17,35 @@ const api = {
       },
     }),
   },
+  agents: {
+    getModels: token => fetch(`${url}/agents/`, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    })
+      .then((res, err) => {
+        if (err) {
+          return err;
+        }
+        return res.json();
+      })
+      .catch(err => err),
+    addModel: (token, data) => fetch(`${url}/agents/add-model`, {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${token}`,
+        'content-type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+      .then((res, err) => {
+        if (err) {
+          return err;
+        }
+        return res.json();
+      })
+      .catch(err => err),
+  },
 };
 
 export default api;

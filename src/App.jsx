@@ -10,7 +10,7 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      user: null,
+      user: getCurrentUser(),
     };
 
     this.updateUser = this.updateUser.bind(this);
