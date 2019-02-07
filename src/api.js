@@ -46,6 +46,35 @@ const api = {
       })
       .catch(err => err),
   },
+  jobs: {
+    addJob: (token, data) => fetch(`${url}/jobs/create`, {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${token}`,
+        'content-type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+      .then((res, err) => {
+        if (err) {
+          return err;
+        }
+        return res.json();
+      })
+      .catch(err => err),
+    getJobs: token => fetch(`${url}/jobs/all`, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    })
+      .then((res, err) => {
+        if (err) {
+          return err;
+        }
+        return res.json();
+      })
+      .catch(err => err),
+  },
 };
 
 export default api;

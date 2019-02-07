@@ -1,17 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import api from '../api';
 import ModelCard from './ModelCard';
 import { getToken } from '../auth';
 
-class ModelsList extends React.Component {
+class ModelList extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
       models: [],
     };
-    this.redirectToAddModel = this.redirectToAddModel.bind(this);
   }
 
   componentDidMount() {
@@ -22,18 +20,10 @@ class ModelsList extends React.Component {
     });
   }
 
-  redirectToAddModel() {
-    const { history } = this.props;
-    history.push('/add-model');
-  }
-
   render() {
     const { models } = this.state;
     return (
-      <div className="page">
-        <button type="button" onClick={this.redirectToAddModel}>
-                    Add model
-        </button>
+      <div>
         {models ? (
           <ul>
             {models.map(model => (
@@ -50,8 +40,4 @@ class ModelsList extends React.Component {
   }
 }
 
-ModelsList.propTypes = {
-  history: PropTypes.shape({}).isRequired,
-};
-
-export default ModelsList;
+export default ModelList;
