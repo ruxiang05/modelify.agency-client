@@ -1,8 +1,8 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import JobList from './JobList';
-import ModelsList from './ModelsList';
-import AddJob from './AddJob';
+import Models from './Models';
+import AddJob from './AddJob/AddJob';
 import Chat from './Chat';
 import Profile from './Profile';
 import NotFound from './NotFound';
@@ -17,7 +17,7 @@ const Main = () => (
     <Route path="/signup" component={Signup} />
     <Route path="/login" component={Login} />
     <ProtectedRoute path="/jobs" exact component={JobList} />
-    <ProtectedRoute path="/models" component={ModelsList} />
+    <ProtectedRoute path="/models" component={Models} />
     <ProtectedRoute path="/jobs/new" component={AddJob} />
     <ProtectedRoute path="/chat" component={Chat} />
     <ProtectedRoute path="/profile" component={Profile} />
