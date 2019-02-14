@@ -6,7 +6,7 @@ const setToken = token => localStorage.setItem('jwt-token', token);
 
 const getCurrentUser = () => {
   const token = getToken();
-  if (token) return jwtDecode(token).userData;
+  if (token) return jwtDecode(token).user;
   return null;
 };
 

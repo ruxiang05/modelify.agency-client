@@ -4,7 +4,7 @@ import JobList from './JobList';
 import Models from './Models';
 import AddJob from './AddJob/AddJob';
 import Chat from './Chat';
-import Profile from './Profile';
+import Profile from './Profile/Profile';
 import NotFound from './NotFound';
 import Signup from './Signup';
 import Login from './Login';

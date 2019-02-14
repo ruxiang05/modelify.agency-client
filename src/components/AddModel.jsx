@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import FormInput from './FormInput';
+import PageHeader from './PageHeader';
 import api from '../api';
 import { getToken } from '../auth';
 
@@ -31,18 +32,22 @@ class AddModel extends React.Component {
 
   render() {
     const { email } = this.state;
+    const { history } = this.props;
     return (
-      <form onSubmit={this.handleSubmit}>
-        <FormInput
-          type="text"
-          title="Add model"
-          name="add-model"
-          value={email}
-          placeholder="Model email"
-          handleChange={this.handleChange}
-        />
-        <input type="submit" value="Submit" />
-      </form>
+      <div className="page">
+        <PageHeader title="Add model" backButton history={history} />
+        <form onSubmit={this.handleSubmit}>
+          <FormInput
+            type="text"
+            title="Add model"
+            name="add-model"
+            value={email}
+            placeholder="Model email"
+            handleChange={this.handleChange}
+          />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
     );
   }
 }

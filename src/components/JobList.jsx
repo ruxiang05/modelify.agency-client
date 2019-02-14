@@ -2,6 +2,7 @@ import React from 'react';
 import JobCard from './JobCard';
 import { getToken } from '../auth';
 import api from '../api';
+import PageHeader from './PageHeader';
 
 class JobList extends React.Component {
   constructor(props) {
@@ -24,6 +25,7 @@ class JobList extends React.Component {
     const { jobs } = this.state;
     return (
       <div className="page">
+        <PageHeader title="Jobs" />
         {jobs.length ? (
           <ul>
             {jobs.map(job => (
