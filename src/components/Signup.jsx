@@ -14,8 +14,7 @@ class Signup extends React.Component {
     this.state = {
       email: '',
       password: '',
-      firstName: '',
-      lastName: '',
+      name: '',
       phoneNumber: '',
       role: 'agent',
     };
@@ -61,11 +60,7 @@ class Signup extends React.Component {
 
   render() {
     const {
-      email,
-      password,
-      firstName,
-      lastName,
-      phoneNumber,
+      email, password, name, phoneNumber,
     } = this.state;
     return (
       <form onSubmit={this.handleSubmit}>
@@ -87,18 +82,10 @@ class Signup extends React.Component {
         />
         <FormInput
           type="text"
-          name="firstName"
-          title="First Name"
-          value={firstName}
-          placeholder="Enter your first name"
-          handleChange={this.handleChange}
-        />
-        <FormInput
-          type="text"
-          name="lastName"
-          title="Last Name"
-          value={lastName}
-          placeholder="Enter your last name"
+          name="name"
+          title="Name"
+          value={name}
+          placeholder="Enter your name"
           handleChange={this.handleChange}
         />
         <FormInput

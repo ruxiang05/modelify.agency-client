@@ -18,22 +18,16 @@ class ModelCard extends React.Component {
   }
 
   render() {
-    const { firstName, lastName, _id } = this.props;
+    const { name, _id } = this.props;
     const { selectModel } = this.context;
     return (
       <React.Fragment>
-        {selectModel instanceof Function ? (
+        {selectModel instanceof Function && selectModel.length ? (
           <button type="submit" onClick={this.handleClick}>
-            {firstName}
-            {' '}
-            {lastName}
+            {name}
           </button>
         ) : (
-          <Link to={`${_id}`}>
-            {firstName}
-            {' '}
-            {lastName}
-          </Link>
+          <Link to={`${_id}`}>{name}</Link>
         )}
       </React.Fragment>
     );
@@ -44,8 +38,7 @@ ModelCard.contextType = SelectModel;
 
 ModelCard.propTypes = {
   email: PropTypes.string.isRequired,
-  firstName: PropTypes.string.isRequired,
-  lastName: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   _id: PropTypes.string.isRequired,
 };
 export default ModelCard;

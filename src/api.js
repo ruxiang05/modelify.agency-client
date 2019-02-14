@@ -16,6 +16,21 @@ const api = {
         'Content-Type': 'application/json',
       },
     }),
+    editProfile: (token, data) => fetch(`${url}/users/edit`, {
+      method: 'PUT',
+      body: JSON.stringify(data),
+      headers: {
+        Authorization: `Bearer ${token}`,
+        'Content-Type': 'application/json',
+      },
+    })
+      .then((res, err) => {
+        if (err) {
+          return err;
+        }
+        return res.json();
+      })
+      .catch(err => err),
   },
   agents: {
     getModels: token => fetch(`${url}/agents/`, {

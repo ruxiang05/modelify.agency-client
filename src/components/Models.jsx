@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ModelsList from './ModelList';
+import PageHeader from './PageHeader';
 
 class Models extends React.Component {
   constructor(props) {
@@ -16,6 +17,7 @@ class Models extends React.Component {
   render() {
     return (
       <div className="page">
+        <PageHeader title="Models" />
         <button type="button" onClick={this.redirectToAddModel}>
                     Add model
         </button>
