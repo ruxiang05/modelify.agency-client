@@ -34,20 +34,24 @@ class AddModel extends React.Component {
     const { email } = this.state;
     const { history } = this.props;
     return (
-      <div className="page">
+      <React.Fragment>
         <PageHeader title="Add model" backButton history={history} />
-        <form onSubmit={this.handleSubmit}>
-          <FormInput
-            type="text"
-            title="Add model"
-            name="add-model"
-            value={email}
-            placeholder="Model email"
-            handleChange={this.handleChange}
-          />
-          <input type="submit" value="Submit" />
-        </form>
-      </div>
+        <div className="page">
+          <form onSubmit={this.handleSubmit}>
+            <FormInput
+              type="text"
+              title="Add model"
+              name="add-model"
+              value={email}
+              placeholder="Model email"
+              handleChange={this.handleChange}
+            />
+            <div className="form-submit">
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </React.Fragment>
     );
   }
 }

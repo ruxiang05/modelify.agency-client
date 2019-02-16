@@ -1,9 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import FormInput from './FormInput';
 import { UserContext } from '../contexts/userContext';
 import api from '../api';
 import { setToken } from '../auth';
+import '../styles/login.scss';
+import Logo from './Logo';
 
 class Login extends React.Component {
   constructor(props) {
@@ -47,25 +50,34 @@ class Login extends React.Component {
   render() {
     const { email, password } = this.state;
     return (
-      <form onSubmit={this.handleSubmit}>
-        <FormInput
-          type="text"
-          name="email"
-          title="Email"
-          value={email}
-          placeholder="Enter your email"
-          handleChange={this.handleChange}
-        />
-        <FormInput
-          type="text"
-          name="password"
-          title="Password"
-          value={password}
-          placeholder="Enter your passowrd"
-          handleChange={this.handleChange}
-        />
-        <input type="submit" value="Submit" />
-      </form>
+      <div className="page">
+        <Logo />
+        <form onSubmit={this.handleSubmit}>
+          <FormInput
+            type="text"
+            name="email"
+            title="Email"
+            value={email}
+            placeholder="Enter your email"
+            handleChange={this.handleChange}
+          />
+          <FormInput
+            type="text"
+            name="password"
+            title="Password"
+            value={password}
+            placeholder="Enter your passowrd"
+            handleChange={this.handleChange}
+          />
+          <div className="form-submit">
+            <input type="submit" value="Log in" />
+          </div>
+        </form>
+        <div className="to-sign-up">
+          <p>OR</p>
+          <Link to="/signup">Sign up</Link>
+        </div>
+      </div>
     );
   }
 }

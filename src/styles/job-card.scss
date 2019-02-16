@@ -1,4 +1,49 @@
+@import './vars.scss';
+
 .job-card {
-    margin: 10px;
-    border: 1px solid #000;
+    margin: 1.5rem 1rem;
+    border: 1px solid $dark;
+    border-radius: 8px;
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem;
+        border-bottom: 1px solid $dark;
+
+        p {
+            margin: 0;
+        }
+
+        &-date {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &-content {
+        padding: 0.5rem;
+    }
+
+    &-footer {
+        border-top: 1px solid $dark;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            margin: 0.5rem 0;
+            font-size: 0.825rem;
+        }
+    }
 }

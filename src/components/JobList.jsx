@@ -24,20 +24,22 @@ class JobList extends React.Component {
   render() {
     const { jobs } = this.state;
     return (
-      <div className="page">
+      <React.Fragment>
         <PageHeader title="Jobs" />
-        {jobs.length ? (
-          <ul>
-            {jobs.map(job => (
-              <li key={jobs.indexOf(job)}>
-                <JobCard {...job} />
-              </li>
-            ))}
-          </ul>
-        ) : (
-          <div>No jobs yet</div>
-        )}
-      </div>
+        <div className="page">
+          {jobs.length ? (
+            <ul>
+              {jobs.map(job => (
+                <li key={jobs.indexOf(job)}>
+                  <JobCard {...job} />
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <div>No jobs yet</div>
+          )}
+        </div>
+      </React.Fragment>
     );
   }
 }

@@ -1,19 +1,32 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../styles/job-card.scss';
+import { ReactComponent as DateIcon } from '../assets/icons/calendar-day.svg';
 
 const JobCard = ({
   title, date, address, description, pay, status,
 }) => {
-  const formatedDate = new Date(date).toDateString();
+  const formatedDate = new Date(date).toLocaleDateString();
   return (
     <div className="job-card">
-      <div>{title}</div>
-      <div>{formatedDate}</div>
-      <div>{address}</div>
-      <div>{description}</div>
-      <div>{pay}</div>
-      <div>{status}</div>
+      <div className="job-card-header">
+        <div className="job-card-header-date">
+          <DateIcon />
+          <p>{formatedDate}</p>
+        </div>
+        <p>
+£
+          {pay}
+        </p>
+      </div>
+      <div className="job-card-content">
+        <h2>{title}</h2>
+        <p className="truncate">{address}</p>
+        <p className="truncate">{description}</p>
+      </div>
+      <div className="job-card-footer">
+        <p>{status.toUpperCase()}</p>
+      </div>
     </div>
   );
 };

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const RadioFormInput = ({
   title, name, value, handleChange, id, checked,
 }) => (
-  <React.Fragment>
+  <div className="radio-container">
     <input
       id={id}
       name={name}
@@ -13,8 +13,9 @@ const RadioFormInput = ({
       onChange={handleChange}
       checked={checked}
     />
+    <span className="radio" />
     <label htmlFor={id}>{title}</label>
-  </React.Fragment>
+  </div>
 );
 
 RadioFormInput.propTypes = {

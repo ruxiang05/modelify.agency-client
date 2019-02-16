@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Route } from 'react-router-dom';
 import EditProfile from './EditProfile';
 import { UserContext } from '../../contexts/userContext';
 import PageHeader from '../PageHeader';
+import { ReactComponent as UnknownUserIcon } from '../../assets/icons/user-circle.svg';
 
 class Profile extends React.Component {
   constructor(props) {
@@ -31,17 +33,26 @@ class Profile extends React.Component {
   render() {
     const { edit } = this.state;
     const { user, updateUser } = this.context;
+    const { name, phoneNumber } = user;
     const { history } = this.props;
+
     return (
       <React.Fragment>
         {edit ? (
-          <EditProfile toggleEdit={this.toggleEdit} {...user} updateUser={updateUser} history={history}/>
+          <Route to="/edit"><EditProfile toggleEdit={this.toggleEdit} {...user} updateUser={updateUser} history={history} /></Route>
         ) : (
-          <div className="page">
+          <React.Fragment>
             <PageHeader title="Profile" />
-            <button type="button" onClick={this.toggleEdit}>Edit</button>
-            <button type="button" onClick={this.logout}>Logout</button>
-          </div>
+            <div className="page">
+              <div className="profile-details">
+                <UnknownUserIcon />
+                <p>{name}</p>
+                <p>{phoneNumber}</p>
+              </div>
+              <button type="button" onClick={this.toggleEdit}>Edit</button>
+              <button type="button" onClick={this.logout}>Logout</button>
+            </div>
+          </React.Fragment>
         )}
       </React.Fragment>
     );

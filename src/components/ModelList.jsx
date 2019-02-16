@@ -23,7 +23,7 @@ class ModelList extends React.Component {
   render() {
     const { models } = this.state;
     return (
-      <div>
+      <React.Fragment>
         {models ? (
           <ul>
             {models.map(model => (
@@ -35,7 +35,7 @@ class ModelList extends React.Component {
         ) : (
           <div>No models yet</div>
         )}
-      </div>
+      </React.Fragment>
     );
   }
 }
