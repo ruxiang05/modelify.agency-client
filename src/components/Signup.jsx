@@ -60,7 +60,7 @@ class Signup extends React.Component {
 
   render() {
     const {
-      email, password, name, phoneNumber,
+      email, password, name, phoneNumber, role,
     } = this.state;
     return (
       <form onSubmit={this.handleSubmit}>
@@ -104,7 +104,7 @@ class Signup extends React.Component {
             title="Agent"
             value="agent"
             handleChange={this.handleChange}
-            checked
+            checked={role === 'agent'}
           />
           <RadioFormInput
             id="role-model"
@@ -112,6 +112,7 @@ class Signup extends React.Component {
             title="Model"
             value="model"
             handleChange={this.handleChange}
+            checked={role === 'model'}
           />
         </div>
         <input type="submit" value="Submit" />
