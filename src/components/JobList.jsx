@@ -17,7 +17,7 @@ class JobList extends React.Component {
     const token = getToken();
     api.jobs.getJobs(token).then((res) => {
       const { jobs } = res;
-      this.setState({ jobs });
+      if (jobs) this.setState({ jobs });
     });
   }
 
