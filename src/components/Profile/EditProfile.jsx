@@ -82,130 +82,130 @@ class EditProfile extends React.Component {
     const {
       email, name, phoneNumber, role, dateOfBirth, address, eyes, hair, skin, height, weight, chest, waist, hips,
     } = this.state;
-    const { history } = this.props;
+    const { toggleEdit } = this.props;
     return (
-      <div className="page">
-        <PageHeader title="Edit" backButton history={history} />
-        <form onSubmit={this.handleSubmit}>
-          <h2>Account Details</h2>
-          <FormInput
-            type="text"
-            name="email"
-            title="Email"
-            value={email}
-            placeholder="Enter your email"
-            handleChange={this.handleChange}
-          />
-          <FormInput
-            type="text"
-            name="name"
-            title="Name"
-            value={name}
-            placeholder="Enter your name"
-            handleChange={this.handleChange}
-          />
-          <FormInput
-            type="text"
-            name="phoneNumber"
-            title="Phone"
-            value={phoneNumber}
-            placeholder="Enter your phone number"
-            handleChange={this.handleChange}
-          />
-          {role === 'model' && (
-          <React.Fragment>
-            <p>Model Details</p>
+      <React.Fragment>
+        <PageHeader title="Edit" backButton goBackAction={toggleEdit} />
+
+        <div className="page">
+          <form onSubmit={this.handleSubmit}>
+            <h2>Account Details</h2>
             <FormInput
-              type="date"
-              name="dateOfBirth"
-              title="Date Of Birth"
-              value={dateOfBirth}
+              type="text"
+              name="email"
+              title="Email"
+              value={email}
+              placeholder="Enter your email"
               handleChange={this.handleChange}
             />
             <FormInput
               type="text"
-              name="address"
-              title="Enter your address"
-              value={address}
-              placeholder="Address"
-              handleChange={this.handleChange}
-            />
-            <h2>Characteristics</h2>
-            <FormInput
-              type="text"
-              name="eyes"
-              title="Eye Colour"
-              value={eyes}
-              placeholder="Enter your eye colour"
+              name="name"
+              title="Name"
+              value={name}
+              placeholder="Enter your name"
               handleChange={this.handleChange}
             />
             <FormInput
               type="text"
-              name="hair"
-              title="Hair colour"
-              value={hair}
-              placeholder="Enter your hair Colour"
+              name="phoneNumber"
+              title="Phone"
+              value={phoneNumber}
+              placeholder="Enter your phone number"
               handleChange={this.handleChange}
             />
-            <FormInput
-              type="text"
-              name="skin"
-              title="Skin Colour"
-              value={skin}
-              placeholder="Enter your skin"
-              handleChange={this.handleChange}
-            />
-            <h2>Measurements</h2>
-            <FormInput
-              type="text"
-              name="height"
-              title="Height"
-              value={height}
-              placeholder="Enter our height"
-              handleChange={this.handleChange}
-            />
-            <FormInput
-              type="text"
-              name="weight"
-              title="Weight"
-              value={weight}
-              placeholder="Enter our weight"
-              handleChange={this.handleChange}
-            />
-            <FormInput
-              type="text"
-              name="chest"
-              title="Chest"
-              value={chest}
-              placeholder="Enter our chest size"
-              handleChange={this.handleChange}
-            />
-            <FormInput
-              type="text"
-              name="waist"
-              title="Waist"
-              value={waist}
-              placeholder="Enter our waist size"
-              handleChange={this.handleChange}
-            />
-            <FormInput
-              type="text"
-              name="hips"
-              title="Hips"
-              value={hips}
-              placeholder="Enter your hip size"
-              handleChange={this.handleChange}
-            />
-          </React.Fragment>
-          )}
-          <div className="form-submit">
-            <input type="cancel" value="Cancel" />
-          </div>
-          <div className="form-submit">
-            <input type="submit" value="Done" />
-          </div>
-        </form>
-      </div>
+            {role === 'model' && (
+            <React.Fragment>
+              <p>Model Details</p>
+              <FormInput
+                type="date"
+                name="dateOfBirth"
+                title="Date Of Birth"
+                value={dateOfBirth}
+                handleChange={this.handleChange}
+              />
+              <FormInput
+                type="text"
+                name="address"
+                title="Enter your address"
+                value={address}
+                placeholder="Address"
+                handleChange={this.handleChange}
+              />
+              <h2>Characteristics</h2>
+              <FormInput
+                type="text"
+                name="eyes"
+                title="Eye Colour"
+                value={eyes}
+                placeholder="Enter your eye colour"
+                handleChange={this.handleChange}
+              />
+              <FormInput
+                type="text"
+                name="hair"
+                title="Hair colour"
+                value={hair}
+                placeholder="Enter your hair Colour"
+                handleChange={this.handleChange}
+              />
+              <FormInput
+                type="text"
+                name="skin"
+                title="Skin Colour"
+                value={skin}
+                placeholder="Enter your skin"
+                handleChange={this.handleChange}
+              />
+              <h2>Measurements</h2>
+              <FormInput
+                type="text"
+                name="height"
+                title="Height"
+                value={height}
+                placeholder="Enter our height"
+                handleChange={this.handleChange}
+              />
+              <FormInput
+                type="text"
+                name="weight"
+                title="Weight"
+                value={weight}
+                placeholder="Enter our weight"
+                handleChange={this.handleChange}
+              />
+              <FormInput
+                type="text"
+                name="chest"
+                title="Chest"
+                value={chest}
+                placeholder="Enter our chest size"
+                handleChange={this.handleChange}
+              />
+              <FormInput
+                type="text"
+                name="waist"
+                title="Waist"
+                value={waist}
+                placeholder="Enter our waist size"
+                handleChange={this.handleChange}
+              />
+              <FormInput
+                type="text"
+                name="hips"
+                title="Hips"
+                value={hips}
+                placeholder="Enter your hip size"
+                handleChange={this.handleChange}
+              />
+            </React.Fragment>
+            )}
+            <div className="form-submit">
+              <input type="submit" value="Done" />
+            </div>
+          </form>
+        </div>
+      </React.Fragment>
     );
   }
 }
@@ -233,10 +233,6 @@ EditProfile.propTypes = {
   role: PropTypes.string.isRequired,
   toggleEdit: PropTypes.func.isRequired,
   updateUser: PropTypes.func.isRequired,
-};
-
-EditProfile.propTypes = {
-  history: PropTypes.shape({}).isRequired,
 };
 
 export default EditProfile;

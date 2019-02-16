@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../styles/form-input.scss';
 
 const FormInput = ({
   title, name, type, value, handleChange, placeholder,

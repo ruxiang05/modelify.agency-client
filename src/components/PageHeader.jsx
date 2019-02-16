@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { ReactComponent as BackIcon } from '../assets/icons/arrow-left.svg';
+import backIcon from '../assets/icons/arrow-left.svg';
 import '../styles/page-header.scss';
 
 class PageHeader extends React.Component {
@@ -10,12 +10,22 @@ class PageHeader extends React.Component {
   }
 
   back() {
-    const { history } = this.props;
-    history.goBack();
+    const { history, goBackAction } = this.props;
+    if (goBackAction) {
+      goBackAction();
+    } else {
+      history.goBack();
+    }
   }
 
   render() {
-    const { title, backButton } = this.props;
+    const {
+      title,
+      backButton,
+      action,
+      actionIcon,
+      actionAltText,
+    } = this.props;
     return (
       <div className="page-header">
         {backButton ? (
@@ -24,22 +34,40 @@ class PageHeader extends React.Component {
             type="button"
             onClick={this.back}
           >
-            <BackIcon />
+            <img src={backIcon} alt="Go back" />
           </button>
         ) : null}
         <h1>{title}</h1>
+        {action ? (
+          <button
+            className="action-button"
+            type="button"
+            onClick={action}
+          >
+            <img src={actionIcon} alt={actionAltText} />
+          </button>
+        ) : null}
       </div>
     );
   }
 }
 PageHeader.defaultProps = {
   backButton: false,
+  action: undefined,
+  actionIcon: undefined,
+  actionAltText: undefined,
+  history: undefined,
+  goBackAction: undefined,
 };
 
 PageHeader.propTypes = {
   backButton: PropTypes.bool,
   title: PropTypes.string.isRequired,
-  history: PropTypes.shape({}).isRequired,
+  action: PropTypes.func,
+  actionIcon: PropTypes.string,
+  actionAltText: PropTypes.string,
+  history: PropTypes.shape({}),
+  goBackAction: PropTypes.func,
 };
 
 export default PageHeader;

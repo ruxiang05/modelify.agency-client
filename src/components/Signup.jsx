@@ -63,60 +63,66 @@ class Signup extends React.Component {
       email, password, name, phoneNumber, role,
     } = this.state;
     return (
-      <form onSubmit={this.handleSubmit}>
-        <FormInput
-          type="text"
-          name="email"
-          title="Email"
-          value={email}
-          placeholder="Enter your email"
-          handleChange={this.handleChange}
-        />
-        <FormInput
-          type="text"
-          name="password"
-          title="Password"
-          value={password}
-          placeholder="Enter your passowrd"
-          handleChange={this.handleChange}
-        />
-        <FormInput
-          type="text"
-          name="name"
-          title="Name"
-          value={name}
-          placeholder="Enter your name"
-          handleChange={this.handleChange}
-        />
-        <FormInput
-          type="text"
-          name="phoneNumber"
-          title="Phone"
-          value={phoneNumber}
-          placeholder="Enter your phone number"
-          handleChange={this.handleChange}
-        />
-        <div>
-          <label htmlFor="role">Role</label>
-          <RadioFormInput
-            id="role-agent"
-            name="role"
-            title="Agent"
-            value="agent"
+      <div className="page">
+        <form onSubmit={this.handleSubmit}>
+          <FormInput
+            type="text"
+            name="email"
+            title="Email"
+            value={email}
+            placeholder="Enter your email"
             handleChange={this.handleChange}
-            checked={role === 'agent'}
           />
-          <RadioFormInput
-            id="role-model"
-            name="role"
-            title="Model"
-            value="model"
+          <FormInput
+            type="text"
+            name="password"
+            title="Password"
+            value={password}
+            placeholder="Enter your passowrd"
             handleChange={this.handleChange}
-            checked={role === 'model'}
           />
-        </div>
-        <input type="submit" value="Submit" />
-      </form>
+          <FormInput
+            type="text"
+            name="name"
+            title="Name"
+            value={name}
+            placeholder="Enter your name"
+            handleChange={this.handleChange}
+          />
+          <FormInput
+            type="text"
+            name="phoneNumber"
+            title="Phone"
+            value={phoneNumber}
+            placeholder="Enter your phone number"
+            handleChange={this.handleChange}
+          />
+          <div>
+            <label htmlFor="role">Role</label>
+            <div>
+              <RadioFormInput
+                id="role-agent"
+                name="role"
+                title="Agent"
+                value="agent"
+                handleChange={this.handleChange}
+                checked={role === 'agent'}
+              />
+              <RadioFormInput
+                id="role-model"
+                name="role"
+                title="Model"
+                value="model"
+                handleChange={this.handleChange}
+                checked={role === 'model'}
+              />
+            </div>
+          </div>
+          <div className="form-submit">
+            <input type="submit" value="Sign up" />
+          </div>
+        </form>
+      </div>
     );
   }
 }

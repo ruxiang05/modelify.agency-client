@@ -3,10 +3,12 @@ import ModelList from '../ModelList';
 import PageHeader from '../PageHeader';
 
 const AddJobDetails = props => (
-  <div className="page">
+  <React.Fragment>
     <PageHeader title="Select Model" />
-    <ModelList {...props} />
-  </div>
+    <div className="page">
+      <ModelList {...props} />
+    </div>
+  </React.Fragment>
 );
 
 export default AddJobDetails;

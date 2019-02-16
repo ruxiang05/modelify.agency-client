@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Main from './components/Main';
 import { UserProvider } from './contexts/userContext';
 import './styles/app.scss';
+import './styles/common.scss';
 import { getCurrentUser, logOut } from './auth';
 
 class App extends React.Component {
