@@ -63,7 +63,7 @@ class Signup extends React.Component {
       email, password, name, phoneNumber, role,
     } = this.state;
     return (
-      <div className="page">
+      <div className="page centered">
         <form onSubmit={this.handleSubmit}>
           <FormInput
             type="text"

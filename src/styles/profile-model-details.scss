@@ -1,0 +1,49 @@
+@import './vars.scss';
+
+.profile-model-details {
+    flex: 1 0 auto;
+    border: 1px solid $dark;
+    border-radius: 8px;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+
+    h2 {
+        margin: 0;
+        font-size: 1.25rem;
+    }
+
+    ul {
+        margin: 0.5rem 0;
+        display: flex;
+    }
+
+    .characteristics {
+        justify-content: space-evenly;
+    }
+
+    .measurements {
+        flex-direction: column;
+
+        div {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0.5rem 0;
+        }
+    }
+
+    li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        span {
+            font-size: 1.25rem;
+            margin-top: 5px;
+        }
+    }
+
+    .disclosure {
+        margin: 0;
+        color: $grey;
+    }
+}

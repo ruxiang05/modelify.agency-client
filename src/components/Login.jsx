@@ -50,7 +50,7 @@ class Login extends React.Component {
   render() {
     const { email, password } = this.state;
     return (
-      <div className="page">
+      <div className="page centered">
         <Logo />
         <form onSubmit={this.handleSubmit}>
           <FormInput

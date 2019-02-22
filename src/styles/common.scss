@@ -109,13 +109,20 @@ svg {
     margin-right: 1rem;
 }
 
+button {
+    background: inherit;
+}
+
 .page {
     flex: 1 1 auto;
     overflow: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+    &.centered {
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .truncate {
