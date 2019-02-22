@@ -5,6 +5,9 @@ import EditProfile from './EditProfile';
 import { UserContext } from '../../contexts/userContext';
 import PageHeader from '../PageHeader';
 import { ReactComponent as UnknownUserIcon } from '../../assets/icons/user-circle.svg';
+import { ReactComponent as ForwardIcon } from '../../assets/icons/arrow-right.svg';
+import ProfileModelDetails from './ProfileModelDetails';
+import '../../styles/profile.scss';
 
 class Profile extends React.Component {
   constructor(props) {
@@ -33,7 +36,7 @@ class Profile extends React.Component {
   render() {
     const { edit } = this.state;
     const { user, updateUser } = this.context;
-    const { name, phoneNumber } = user;
+    const { name, phoneNumber, role } = user;
     const { history } = this.props;
 
     return (
@@ -46,11 +49,22 @@ class Profile extends React.Component {
             <div className="page">
               <div className="profile-details">
                 <UnknownUserIcon />
-                <p>{name}</p>
-                <p>{phoneNumber}</p>
+                <div>
+                  <h1 className="profile-name">{name}</h1>
+                  <p>{phoneNumber}</p>
+                </div>
               </div>
-              <button type="button" onClick={this.toggleEdit}>Edit</button>
-              <button type="button" onClick={this.logout}>Logout</button>
+              {role === 'model' && <ProfileModelDetails user={user} />}
+              <div className="profile-actions">
+                <button type="button" onClick={this.toggleEdit}>
+                  Edit my profile
+                  <ForwardIcon />
+                </button>
+                <button type="button" onClick={this.logout}>
+                  Logout
+                  <ForwardIcon />
+                </button>
+              </div>
             </div>
           </React.Fragment>
         )}

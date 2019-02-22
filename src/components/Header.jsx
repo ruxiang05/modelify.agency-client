@@ -1,13 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { ReactComponent as ListIcon } from '../assets/icons/list-ul.svg';
 import { ReactComponent as ModelsListIcon } from '../assets/icons/users.svg';
-import { ReactComponent as AddJobIcon } from '../assets/icons/plus-square.svg';
-import { ReactComponent as ChatIcon } from '../assets/icons/comment-alt-lines.svg';
+import { ReactComponent as AddIcon } from '../assets/icons/plus-square.svg';
+// import { ReactComponent as ChatIcon } from '../assets/icons/comment-alt-lines.svg';
 import { ReactComponent as ProfileIcon } from '../assets/icons/user.svg';
 import '../styles/header.scss';
 
-const Header = () => (
+const Header = ({ user }) => (
   <header>
     <nav>
       <ul>
@@ -16,21 +17,29 @@ const Header = () => (
             <ListIcon />
           </Link>
         </li>
+        {user.role === 'agent' && (
         <li>
           <Link to="/models">
             <ModelsListIcon />
           </Link>
         </li>
+        )}
         <li>
-          <Link to="/jobs/new">
-            <AddJobIcon />
+          <Link
+            to={
+                            user.role === 'agent'
+                              ? '/jobs/new'
+                              : '/availability'
+                        }
+          >
+            <AddIcon />
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/chat">
             <ChatIcon />
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link to="/profile/">
             <ProfileIcon />
@@ -40,5 +49,9 @@ const Header = () => (
     </nav>
   </header>
 );
+
+Header.propTypes = {
+  user: PropTypes.shape({}).isRequired,
+};
 
 export default Header;

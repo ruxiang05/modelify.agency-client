@@ -32,8 +32,8 @@ class App extends React.Component {
     return (
       <UserProvider value={{ user, updateUser: this.updateUser, handleLogout: this.handleLogout }}>
         <div className="app">
-          {user ? <Header /> : null}
-          <Main />
+          {user && <Header user={user} />}
+          <Main user={user} />
         </div>
       </UserProvider>
     );

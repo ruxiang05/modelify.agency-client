@@ -1,0 +1,51 @@
+@import './vars.scss';
+
+.profile-details {
+    display: flex;
+    align-items: center;
+    flex: 1 0 auto;
+    border: 1px solid $dark;
+    border-radius: 8px;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+
+    svg {
+        width: 40%;
+        height: 70%;
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+.profile-name {
+    font-size: 1.125rem;
+}
+
+.profile-actions {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+
+    button {
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.125rem;
+        margin: 0 1rem;
+        padding: 0.5rem 0;
+
+        svg {
+            width: 24px;
+            height: 24px;
+            margin: 0;
+        }
+    }
+
+    button + button {
+        border-top: 1px solid $dark;
+    }
+}
