@@ -12,6 +12,7 @@ import Login from './Login';
 import AddModel from './AddModel';
 import ProtectedRoute from './ProtectedRoute';
 import Availability from './Availability';
+import Job from './Job';
 
 const Main = ({ user }) => (
   <Switch>
@@ -31,6 +32,7 @@ const Main = ({ user }) => (
     {/* <ProtectedRoute path="/chat" component={Chat} /> */}
     <ProtectedRoute path="/profile" component={Profile} />
     <ProtectedRoute path="/add-model" component={AddModel} />
+    <ProtectedRoute path="/jobs/:id" component={Job} />
     <Route component={NotFound} />
   </Switch>
 );

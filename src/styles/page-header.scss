@@ -6,7 +6,7 @@
     justify-content: center;
     padding: 1rem 0;
     border-bottom: 1px solid $dark;
-    flex: 0 1 auto;
+    flex: 0 0 auto;
 
     button {
         width: 24px;
@@ -22,7 +22,7 @@
     .back-button {
         position: absolute;
         left: 16px;
-        top: 18px;
+        top: 20px;
     }
 
     h1 {
