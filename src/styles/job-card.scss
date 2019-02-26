@@ -25,14 +25,24 @@
             margin: 0;
         }
 
-        &-date {
+        div {
             display: flex;
             align-items: center;
+            font-size: 1.125rem;
         }
     }
 
     &-content {
         padding: 0.5rem;
+
+        div {
+            display: flex;
+            align-items: center;
+        }
+
+        p {
+            margin: 0.5rem 0;
+        }
     }
 
     &-footer {

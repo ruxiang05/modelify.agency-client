@@ -1,0 +1,47 @@
+@import './vars.scss';
+
+.job {
+    .status {
+        background-color: $accent;
+        font-size: 1.25rem;
+        color: $light;
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 1rem 0;
+    }
+}
+
+.job-details {
+    flex: 1 1 auto;
+    ul {
+        margin: 0.5rem;
+        padding: 0.5rem;
+        border: 1px solid $dark;
+        border-radius: 8px;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+    }
+
+    li + li {
+        margin-top: 1rem;
+    }
+
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.job-actions {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+
+    button + button {
+        margin-left: 1rem;
+    }
+}

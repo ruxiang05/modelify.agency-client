@@ -28,25 +28,25 @@ class PageHeader extends React.Component {
     } = this.props;
     return (
       <div className="page-header">
-        {backButton ? (
-          <button
-            className="back-button"
-            type="button"
-            onClick={this.back}
-          >
-            <img src={backIcon} alt="Go back" />
-          </button>
-        ) : null}
+        {backButton && (
+        <button
+          className="back-button"
+          type="button"
+          onClick={this.back}
+        >
+          <img src={backIcon} alt="Go back" />
+        </button>
+        )}
         <h1>{title}</h1>
-        {action ? (
-          <button
-            className="action-button"
-            type="button"
-            onClick={action}
-          >
-            <img src={actionIcon} alt={actionAltText} />
-          </button>
-        ) : null}
+        {action && (
+        <button
+          className="action-button"
+          type="button"
+          onClick={action}
+        >
+          <img src={actionIcon} alt={actionAltText} />
+        </button>
+        )}
       </div>
     );
   }

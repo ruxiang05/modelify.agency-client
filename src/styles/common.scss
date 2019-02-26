@@ -1,5 +1,17 @@
 @import './vars';
 
+* {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+textarea,
+input[type='text'] {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
 html,
 #root {
     height: 100%;
@@ -14,6 +26,33 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-color: $light;
     color: $dark;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    max-height: 100%;
+}
+
+svg {
+    margin-right: 0.5rem;
+}
+
+button {
+    background: inherit;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: 500;
 }
 
 form {
@@ -53,16 +92,6 @@ form {
         border-bottom-color: $accent;
     }
 
-    input[type='submit'] {
-        background-color: $accent;
-        border-radius: 16px;
-        color: #fff;
-        font-size: 1.25rem;
-        padding: 0.25rem 2rem;
-        font-weight: 700;
-        border-color: transparent;
-    }
-
     input[type='radio'] {
         display: none;
     }
@@ -94,23 +123,15 @@ form {
     }
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    max-height: 100%;
-}
-
-svg {
-    margin-right: 1rem;
-}
-
-button {
-    background: inherit;
+form input[type='submit'],
+.primary-button {
+    background-color: $accent;
+    border-radius: 16px;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 0.25rem 2rem;
+    font-weight: 700;
+    border-color: transparent;
 }
 
 .page {
@@ -126,8 +147,15 @@ button {
 }
 
 .truncate {
-    width: 250px;
+    width: 300px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.secondary-button {
+    border: 1px solid $dark;
+    border-radius: 16px;
+    font-size: 1.25rem;
+    padding: 0.25rem 2rem;
 }
