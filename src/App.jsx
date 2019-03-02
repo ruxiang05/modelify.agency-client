@@ -1,4 +1,5 @@
 import React from 'react';
+import io from 'socket.io-client';
 import Header from './components/Header';
 import Main from './components/Main';
 import { UserProvider } from './contexts/userContext';
@@ -16,6 +17,10 @@ class App extends React.Component {
 
     this.updateUser = this.updateUser.bind(this);
     this.handleLogout = this.handleLogout.bind(this);
+  }
+
+  componentDidMount() {
+    this.socket = io(process.env.REACT_APP_API_URL);
   }
 
   updateUser() {
