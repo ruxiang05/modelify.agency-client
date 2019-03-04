@@ -135,6 +135,34 @@ const api = {
       })
       .catch(err => err),
   },
+  chats: {
+    getChats: token => fetch(`${url}/chats/`, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+        'Content-Type': 'application/json',
+      },
+    })
+      .then((res, err) => {
+        if (err) {
+          return err;
+        }
+        return res.json();
+      })
+      .catch(err => err),
+    getMessages: (token, id) => fetch(`${url}/chats/getMessages?id=${id}`, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+        'Content-Type': 'application/json',
+      },
+    })
+      .then((res, err) => {
+        if (err) {
+          return err;
+        }
+        return res.json();
+      })
+      .catch(err => err),
+  },
 };
 
 export default api;

@@ -1,6 +1,8 @@
+@import './vars.scss';
+
 header {
     order: 1;
-    border-top: 1px solid grey;
+    border-top: 1px solid $transition;
     height: 50px;
     flex-shrink: 0;
 
@@ -16,9 +18,5 @@ header {
         display: flex;
         justify-content: space-around;
         align-items: center;
-    }
-
-    svg {
-        height: 24px;
     }
 }

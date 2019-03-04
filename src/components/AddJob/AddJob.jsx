@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import AddJobDetails from './AddJobDetails';
 import AddJobSelectModel from './AddJobSelectModel';
-import { SelectModelProvider } from '../../contexts/SelectModelContext';
 import api from '../../api';
 import { getToken } from '../../auth';
+import { SelectModelProvider } from '../../contexts/selectModelContext';
 
 class AddJob extends React.Component {
   constructor(props) {

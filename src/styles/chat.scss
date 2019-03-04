@@ -1,0 +1,72 @@
+@import './vars.scss';
+
+.messages {
+    flex: 1 1 auto;
+    overflow: auto;
+}
+
+.message {
+    display: flex;
+    margin: 0.5rem;
+    text-justify: auto;
+
+    p {
+        margin: 0;
+        padding: 0.5rem;
+        border-radius: 16px;
+    }
+
+    &.sent {
+        justify-content: flex-end;
+        p {
+            background-color: $accent;
+            color: $light;
+        }
+    }
+
+    &.received p {
+        background-color: $lightgrey;
+    }
+}
+
+.message-form {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    display: flex;
+    border: 1px solid $dark;
+    border-radius: 32px;
+    flex-shrink: 0;
+
+    input {
+        flex: 1 1 auto;
+        border: none;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    button {
+        padding: 0;
+        border: none;
+        margin-left: 1rem;
+    }
+}
+
+.job-chat-card {
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    align-items: center;
+    border-bottom: 1px solid $transition;
+    padding: 0.5rem 1rem;
+
+    h2 {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    a {
+        border-bottom: 1px solid $dark;
+    }
+}

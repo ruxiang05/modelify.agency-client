@@ -3,6 +3,7 @@ import io from 'socket.io-client';
 import Header from './components/Header';
 import Main from './components/Main';
 import { UserProvider } from './contexts/userContext';
+import { SocketProvider } from './contexts/socketContext';
 import './styles/app.scss';
 import './styles/common.scss';
 import { getCurrentUser, logOut } from './auth';
@@ -20,11 +21,17 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+    const { user } = this.state;
     this.socket = io(process.env.REACT_APP_API_URL);
+    if (user) {
+      this.socket.emit('online', user._id);
+    }
   }
 
   updateUser() {
-    this.setState({ user: getCurrentUser() });
+    const currentUser = getCurrentUser();
+    this.socket.emit('online', currentUser._id);
+    this.setState({ user: currentUser });
   }
 
   handleLogout() {
@@ -36,10 +43,12 @@ class App extends React.Component {
     const { user } = this.state;
     return (
       <UserProvider value={{ user, updateUser: this.updateUser, handleLogout: this.handleLogout }}>
-        <div className="app">
-          {user && <Header user={user} />}
-          <Main user={user} />
-        </div>
+        <SocketProvider value={{ socket: this.socket }}>
+          <div className="app">
+            {user && <Header user={user} />}
+            <Main user={user} />
+          </div>
+        </SocketProvider>
       </UserProvider>
     );
   }
