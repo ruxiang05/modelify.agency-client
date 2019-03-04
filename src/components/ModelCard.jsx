@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import '../styles/model-card.scss';
-import { SelectModel } from '../contexts/SelectModelContext';
+import { SelectModel } from '../contexts/selectModelContext';
 import { ReactComponent as UnknownUserIcon } from '../assets/icons/user-circle.svg';
 
 class ModelCard extends React.Component {

@@ -7,7 +7,7 @@ import { ReactComponent as PoundIcon } from '../assets/icons/pound-sign.svg';
 import { ReactComponent as LocationIcon } from '../assets/icons/map-marker-alt.svg';
 import { ReactComponent as NoteIcon } from '../assets/icons/sticky-note.svg';
 
-const JobCard = (job) => {
+const JobCard = ({ job }) => {
   const {
     date, title, address, description, status, _id, pay,
   } = job;

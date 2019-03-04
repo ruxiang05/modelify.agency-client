@@ -1,0 +1,9 @@
+@import './vars.scss';
+
+.chats {
+    margin: 0;
+
+    li + li {
+        border-top: 1px solid $transition;
+    }
+}

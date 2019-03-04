@@ -31,7 +31,7 @@ class JobList extends React.Component {
             <ul>
               {jobs.map(job => (
                 <li key={jobs.indexOf(job)}>
-                  <JobCard {...job} />
+                  <JobCard job={job} />
                 </li>
               ))}
             </ul>

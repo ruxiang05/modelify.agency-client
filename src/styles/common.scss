@@ -40,7 +40,7 @@ ul {
 }
 
 svg {
-    margin-right: 0.5rem;
+    height: 24px;
 }
 
 button {
@@ -81,7 +81,7 @@ form {
 
     input:not([type='submit']) {
         font-size: 1.25rem;
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid $dark;
         border-top: none;
         border-right: none;
         border-left: none;
