@@ -66,7 +66,7 @@ class Signup extends React.Component {
       <div className="page centered">
         <form onSubmit={this.handleSubmit}>
           <FormInput
-            type="text"
+            type="email"
             name="email"
             title="Email"
             value={email}
@@ -74,7 +74,7 @@ class Signup extends React.Component {
             handleChange={this.handleChange}
           />
           <FormInput
-            type="text"
+            type="password"
             name="password"
             title="Password"
             value={password}
@@ -90,7 +90,7 @@ class Signup extends React.Component {
             handleChange={this.handleChange}
           />
           <FormInput
-            type="text"
+            type="tel"
             name="phoneNumber"
             title="Phone"
             value={phoneNumber}
