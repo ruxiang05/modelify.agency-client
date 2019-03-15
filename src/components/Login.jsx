@@ -54,7 +54,7 @@ class Login extends React.Component {
         <Logo />
         <form onSubmit={this.handleSubmit}>
           <FormInput
-            type="text"
+            type="email"
             name="email"
             title="Email"
             value={email}
@@ -62,7 +62,7 @@ class Login extends React.Component {
             handleChange={this.handleChange}
           />
           <FormInput
-            type="text"
+            type="password"
             name="password"
             title="Password"
             value={password}
