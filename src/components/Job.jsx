@@ -8,6 +8,7 @@ import { ReactComponent as PoundIcon } from '../assets/icons/pound-sign.svg';
 import '../styles/job.scss';
 import api from '../api';
 import { getToken } from '../auth';
+import { UserContext } from '../contexts/userContext';
 
 class Job extends React.Component {
   constructor(props) {
@@ -61,6 +62,7 @@ class Job extends React.Component {
       title, date, address, description, pay,
     } = location.state;
     const { status } = this.state;
+    const { user } = this.context;
     const formatedDate = new Date(date).toLocaleDateString();
     return (
       <div className="page job">
@@ -86,35 +88,39 @@ class Job extends React.Component {
             </li>
           </ul>
         </div>
-        <div className="job-actions">
-          {status === 'pending' && (
-          <>
-            <button
-              className="secondary-button"
-              type="button"
-              onClick={this.declineJob}
-            >
+        {
+          user.role === 'model' && (
+            <div className="job-actions">
+              {status === 'pending' && (
+              <>
+                <button
+                  className="secondary-button"
+                  type="button"
+                  onClick={this.declineJob}
+                >
                                 Decline
-            </button>
-            <button
-              className="primary-button"
-              type="button"
-              onClick={this.acceptJob}
-            >
+                </button>
+                <button
+                  className="primary-button"
+                  type="button"
+                  onClick={this.acceptJob}
+                >
                                 Accept
-            </button>
-          </>
-          )}
-          {status === 'in progress' && (
-          <button
-            className="primary-button"
-            type="button"
-            onClick={this.completeJob}
-          >
+                </button>
+              </>
+              )}
+              {status === 'in progress' && (
+              <button
+                className="primary-button"
+                type="button"
+                onClick={this.completeJob}
+              >
                             Complete
-          </button>
-          )}
-        </div>
+              </button>
+              )}
+            </div>
+          )
+        }
       </div>
     );
   }
@@ -124,5 +130,7 @@ Job.propTypes = {
   history: PropTypes.shape({}).isRequired,
   location: PropTypes.shape({}).isRequired,
 };
+
+Job.contextType = UserContext;
 
 export default Job;
