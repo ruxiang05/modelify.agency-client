@@ -24,17 +24,15 @@ const Header = ({ user }) => (
           </Link>
         </li>
         )}
+        { user === 'agent' && (
         <li>
           <Link
-            to={
-                            user.role === 'agent'
-                              ? '/jobs/new'
-                              : '/availability'
-                        }
+            to="/jobs/new"
           >
             <AddIcon />
           </Link>
         </li>
+        )}
         <li>
           <Link to="/chats">
             <ChatIcon />

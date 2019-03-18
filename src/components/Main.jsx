@@ -11,7 +11,6 @@ import Signup from './Signup';
 import Login from './Login';
 import AddModel from './AddModel';
 import ProtectedRoute from './ProtectedRoute';
-import Availability from './Availability';
 import Job from './Job';
 import Chat from './Chat/Chat';
 
@@ -26,9 +25,6 @@ const Main = ({ user }) => (
     )}
     {user && user.role === 'agent' && (
     <ProtectedRoute path="/jobs/new" component={AddJob} />
-    )}
-    {user && user.role === 'model' && (
-    <ProtectedRoute path="/availability" component={Availability} />
     )}
     <ProtectedRoute path="/chats" exact component={ChatList} />
     <ProtectedRoute path="/profile" component={Profile} />
