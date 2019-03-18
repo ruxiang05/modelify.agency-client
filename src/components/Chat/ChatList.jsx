@@ -4,6 +4,7 @@ import PageHeader from '../PageHeader';
 import api from '../../api';
 import { getToken } from '../../auth';
 import '../../styles/chat-list.scss';
+import NoData from '../NoData';
 
 class ChatList extends React.Component {
   constructor(props) {
@@ -27,7 +28,7 @@ class ChatList extends React.Component {
     return (
       <React.Fragment>
         <PageHeader title="Chats" />
-        {chats ? (
+        {chats.length ? (
           <ul className="page chats">
             {chats.map(chat => (
               <li key={chats.indexOf(chat)}>
@@ -36,7 +37,9 @@ class ChatList extends React.Component {
             ))}
           </ul>
         ) : (
-          <div>No chats yet</div>
+          <NoData>
+            <p>You do not have chats yet</p>
+          </NoData>
         )}
       </React.Fragment>
     );

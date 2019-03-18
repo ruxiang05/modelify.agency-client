@@ -1,0 +1,15 @@
+.no-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    svg {
+        width: 70%;
+        height: 70%;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+}

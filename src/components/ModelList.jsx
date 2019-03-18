@@ -2,6 +2,8 @@ import React from 'react';
 import api from '../api';
 import ModelCard from './ModelCard';
 import { getToken } from '../auth';
+import { ReactComponent as NoModels } from '../assets/icons/undraw_online_friends_x73e.svg';
+import '../styles/no-data.scss';
 
 class ModelList extends React.Component {
   constructor(props) {
@@ -24,7 +26,7 @@ class ModelList extends React.Component {
     const { models } = this.state;
     return (
       <React.Fragment>
-        {models ? (
+        {models.length ? (
           <ul>
             {models.map(model => (
               <li key={models.indexOf(model)}>
@@ -33,7 +35,10 @@ class ModelList extends React.Component {
             ))}
           </ul>
         ) : (
-          <div>No models yet</div>
+          <div className="no-data">
+            <NoModels />
+            <p>You do not have any models yet</p>
+          </div>
         )}
       </React.Fragment>
     );
