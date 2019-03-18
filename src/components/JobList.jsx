@@ -3,6 +3,7 @@ import JobCard from './JobCard';
 import { getToken } from '../auth';
 import api from '../api';
 import PageHeader from './PageHeader';
+import NoData from './NoData';
 
 class JobList extends React.Component {
   constructor(props) {
@@ -36,7 +37,9 @@ class JobList extends React.Component {
               ))}
             </ul>
           ) : (
-            <div>No jobs yet</div>
+            <NoData>
+              <p>You do not have jobs yet</p>
+            </NoData>
           )}
         </div>
       </React.Fragment>

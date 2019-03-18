@@ -78,7 +78,7 @@ class Signup extends React.Component {
             name="password"
             title="Password"
             value={password}
-            placeholder="Enter your passowrd"
+            placeholder="Enter your password"
             handleChange={this.handleChange}
           />
           <FormInput

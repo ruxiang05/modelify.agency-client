@@ -88,39 +88,37 @@ class Job extends React.Component {
             </li>
           </ul>
         </div>
-        {
-          user.role === 'model' && (
-            <div className="job-actions">
-              {status === 'pending' && (
-              <>
-                <button
-                  className="secondary-button"
-                  type="button"
-                  onClick={this.declineJob}
-                >
-                                Decline
-                </button>
-                <button
-                  className="primary-button"
-                  type="button"
-                  onClick={this.acceptJob}
-                >
-                                Accept
-                </button>
-              </>
-              )}
-              {status === 'in progress' && (
-              <button
-                className="primary-button"
-                type="button"
-                onClick={this.completeJob}
-              >
-                            Complete
-              </button>
-              )}
-            </div>
-          )
-        }
+        {user.role === 'model' && (
+        <div className="job-actions">
+          {status === 'pending' && (
+          <>
+            <button
+              className="secondary-button"
+              type="button"
+              onClick={this.declineJob}
+            >
+                                    Decline
+            </button>
+            <button
+              className="primary-button"
+              type="button"
+              onClick={this.acceptJob}
+            >
+                                    Accept
+            </button>
+          </>
+          )}
+          {status === 'in progress' && (
+          <button
+            className="primary-button"
+            type="button"
+            onClick={this.completeJob}
+          >
+                                Complete
+          </button>
+          )}
+        </div>
+        )}
       </div>
     );
   }
