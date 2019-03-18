@@ -36,7 +36,7 @@ class Profile extends React.Component {
   render() {
     const { edit } = this.state;
     const { user, updateUser } = this.context;
-    const { name, phoneNumber, role } = user;
+    const { name, phoneNumber, role, photo } = user;
     const { history } = this.props;
 
     return (
@@ -47,14 +47,16 @@ class Profile extends React.Component {
           <React.Fragment>
             <PageHeader title="Profile" />
             <div className="page">
-              <div className="profile-details">
-                <UnknownUserIcon />
-                <div>
-                  <h1 className="profile-name">{name}</h1>
-                  <p>{phoneNumber}</p>
+              <div className="profile-content">
+                <div className="profile-details">
+                  {photo ? <img src={photo} alt="Profile" /> : <UnknownUserIcon />}
+                  <div>
+                    <h1 className="profile-name">{name}</h1>
+                    <p>{phoneNumber}</p>
+                  </div>
                 </div>
+                {role === 'model' && <ProfileModelDetails user={user} />}
               </div>
-              {role === 'model' && <ProfileModelDetails user={user} />}
               <div className="profile-actions">
                 <button type="button" onClick={this.toggleEdit}>
                   Edit my profile

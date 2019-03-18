@@ -4,6 +4,7 @@ import FormInput from '../FormInput';
 import api from '../../api';
 import { getToken, setToken } from '../../auth';
 import PageHeader from '../PageHeader';
+import { ReactComponent as UnknownUserIcon } from '../../assets/icons/user-circle.svg';
 
 class EditProfile extends React.Component {
   constructor(props) {
@@ -13,6 +14,7 @@ class EditProfile extends React.Component {
       email: props.email,
       name: props.name,
       role: props.role,
+      image: props.image,
       phoneNumber: props.phoneNumber,
       dateOfBirth: props.modelInfo.dateOfBirth,
       address: props.modelInfo.address,
@@ -28,23 +30,26 @@ class EditProfile extends React.Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.formatModel = this.formatModel.bind(this);
+    this.uploadImage = this.uploadImage.bind(this);
   }
 
   handleSubmit(event) {
     event.preventDefault();
     const {
-      email, name, role, phoneNumber, ...modelInfo
+      email, name, role, image, phoneNumber, ...modelInfo
     } = this.state;
     let user = {
-      email, name, role, phoneNumber,
+      email, name, role, image, phoneNumber,
     };
     if (role === 'model') {
       user = { ...user, modelInfo: this.formatModel(modelInfo) };
     }
     const { toggleEdit, updateUser } = this.props;
     api.users.editProfile(getToken(), user).then((data) => {
-      setToken(data.token);
-      updateUser();
+      if (data.status === 200) {
+        setToken(data.token);
+        updateUser();
+      }
       toggleEdit();
     });
   }
@@ -78,18 +83,25 @@ class EditProfile extends React.Component {
     this.setState(prevState => ({ ...prevState, [name]: value }));
   }
 
+  uploadImage(event) {
+    this.setState({image:  URL.createObjectURL(event.target.files[0])});
+  }
+
   render() {
     const {
-      email, name, phoneNumber, role, dateOfBirth, address, eyes, hair, skin, height, weight, chest, waist, hips,
+      email, name, phoneNumber, image, role, dateOfBirth, address, eyes, hair, skin, height, weight, chest, waist, hips,
     } = this.state;
     const { toggleEdit } = this.props;
     return (
       <React.Fragment>
         <PageHeader title="Edit" backButton goBackAction={toggleEdit} />
-
-        <div className="page">
+        <div className="page edit-profile">
           <form onSubmit={this.handleSubmit}>
             <h2>Account Details</h2>
+            <div className="profile-image">
+              <label htmlFor="image-upload">{image ? <img src={image} alt="Profile" /> : <UnknownUserIcon />}</label>
+              <input type="file" accept="image/*" className="image-upload" id="image-upload" onChange={this.uploadImage} />
+            </div>
             <FormInput
               type="text"
               name="email"
@@ -214,6 +226,7 @@ EditProfile.propTypes = {
   email: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   phoneNumber: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
   modelInfo: PropTypes.shape({
     dateOfBirth: PropTypes.string.isRequired,
     address: PropTypes.string.isRequired,

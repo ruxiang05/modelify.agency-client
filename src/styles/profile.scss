@@ -1,19 +1,23 @@
 @import './vars.scss';
 
+.profile-content {
+    flex: 1 0 auto;
+}
+
 .profile-details {
     display: flex;
     align-items: center;
-    flex: 1 0 auto;
     border: 1px solid $dark;
     border-radius: 8px;
     margin: 0.5rem;
     padding: 0.5rem 1rem;
+    svg, img {
+        height: 100px;
+        margin-right: 1rem;
+    }
 
-    svg {
-        width: 40%;
-        height: 70%;
-        max-width: 200px;
-        max-height: 200px;
+    img {
+        border-radius: 50%;
     }
 
     p {
@@ -45,5 +49,33 @@
 
     button + button {
         border-top: 1px solid $dark;
+    }
+}
+
+.profile-image {
+    margin: 2rem 0;
+    label {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    svg, img {
+        height: 100px;
+    }
+
+    img {
+        border-radius: 50%;
+    }
+
+    .image-upload {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
     }
 }
