@@ -1,0 +1,781 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Signup should render Signup 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Signup
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <form
+        onSubmit={[Function]}
+      >
+        <FormInput
+          handleChange={[Function]}
+          name="email"
+          placeholder="Enter your email"
+          title="Email"
+          type="email"
+          value=""
+        />
+        <FormInput
+          handleChange={[Function]}
+          name="password"
+          placeholder="Enter your password"
+          title="Password"
+          type="password"
+          value=""
+        />
+        <FormInput
+          handleChange={[Function]}
+          name="name"
+          placeholder="Enter your name"
+          title="Name"
+          type="text"
+          value=""
+        />
+        <FormInput
+          handleChange={[Function]}
+          name="phoneNumber"
+          placeholder="Enter your phone number"
+          title="Phone"
+          type="tel"
+          value=""
+        />
+        <div>
+          <label
+            htmlFor="role"
+          >
+            Role
+          </label>
+          <div>
+            <RadioFormInput
+              checked={true}
+              handleChange={[Function]}
+              id="role-agent"
+              name="role"
+              title="Agent"
+              value="agent"
+            />
+            <RadioFormInput
+              checked={false}
+              handleChange={[Function]}
+              id="role-model"
+              name="role"
+              title="Model"
+              value="model"
+            />
+          </div>
+        </div>
+        <div
+          className="form-submit"
+        >
+          <input
+            type="submit"
+            value="Sign up"
+          />
+        </div>
+      </form>,
+      "className": "page centered",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <FormInput
+            handleChange={[Function]}
+            name="email"
+            placeholder="Enter your email"
+            title="Email"
+            type="email"
+            value=""
+          />,
+          <FormInput
+            handleChange={[Function]}
+            name="password"
+            placeholder="Enter your password"
+            title="Password"
+            type="password"
+            value=""
+          />,
+          <FormInput
+            handleChange={[Function]}
+            name="name"
+            placeholder="Enter your name"
+            title="Name"
+            type="text"
+            value=""
+          />,
+          <FormInput
+            handleChange={[Function]}
+            name="phoneNumber"
+            placeholder="Enter your phone number"
+            title="Phone"
+            type="tel"
+            value=""
+          />,
+          <div>
+            <label
+              htmlFor="role"
+            >
+              Role
+            </label>
+            <div>
+              <RadioFormInput
+                checked={true}
+                handleChange={[Function]}
+                id="role-agent"
+                name="role"
+                title="Agent"
+                value="agent"
+              />
+              <RadioFormInput
+                checked={false}
+                handleChange={[Function]}
+                id="role-model"
+                name="role"
+                title="Model"
+                value="model"
+              />
+            </div>
+          </div>,
+          <div
+            className="form-submit"
+          >
+            <input
+              type="submit"
+              value="Sign up"
+            />
+          </div>,
+        ],
+        "onSubmit": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "handleChange": [Function],
+            "name": "email",
+            "placeholder": "Enter your email",
+            "title": "Email",
+            "type": "email",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "handleChange": [Function],
+            "name": "password",
+            "placeholder": "Enter your password",
+            "title": "Password",
+            "type": "password",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "handleChange": [Function],
+            "name": "name",
+            "placeholder": "Enter your name",
+            "title": "Name",
+            "type": "text",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "handleChange": [Function],
+            "name": "phoneNumber",
+            "placeholder": "Enter your phone number",
+            "title": "Phone",
+            "type": "tel",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <label
+                htmlFor="role"
+              >
+                Role
+              </label>,
+              <div>
+                <RadioFormInput
+                  checked={true}
+                  handleChange={[Function]}
+                  id="role-agent"
+                  name="role"
+                  title="Agent"
+                  value="agent"
+                />
+                <RadioFormInput
+                  checked={false}
+                  handleChange={[Function]}
+                  id="role-model"
+                  name="role"
+                  title="Model"
+                  value="model"
+                />
+              </div>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Role",
+                "htmlFor": "role",
+              },
+              "ref": null,
+              "rendered": "Role",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <RadioFormInput
+                    checked={true}
+                    handleChange={[Function]}
+                    id="role-agent"
+                    name="role"
+                    title="Agent"
+                    value="agent"
+                  />,
+                  <RadioFormInput
+                    checked={false}
+                    handleChange={[Function]}
+                    id="role-model"
+                    name="role"
+                    title="Model"
+                    value="model"
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "checked": true,
+                    "handleChange": [Function],
+                    "id": "role-agent",
+                    "name": "role",
+                    "title": "Agent",
+                    "value": "agent",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "checked": false,
+                    "handleChange": [Function],
+                    "id": "role-model",
+                    "name": "role",
+                    "title": "Model",
+                    "value": "model",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <input
+              type="submit"
+              value="Sign up"
+            />,
+            "className": "form-submit",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "type": "submit",
+              "value": "Sign up",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          "type": "div",
+        },
+      ],
+      "type": "form",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <form
+          onSubmit={[Function]}
+        >
+          <FormInput
+            handleChange={[Function]}
+            name="email"
+            placeholder="Enter your email"
+            title="Email"
+            type="email"
+            value=""
+          />
+          <FormInput
+            handleChange={[Function]}
+            name="password"
+            placeholder="Enter your password"
+            title="Password"
+            type="password"
+            value=""
+          />
+          <FormInput
+            handleChange={[Function]}
+            name="name"
+            placeholder="Enter your name"
+            title="Name"
+            type="text"
+            value=""
+          />
+          <FormInput
+            handleChange={[Function]}
+            name="phoneNumber"
+            placeholder="Enter your phone number"
+            title="Phone"
+            type="tel"
+            value=""
+          />
+          <div>
+            <label
+              htmlFor="role"
+            >
+              Role
+            </label>
+            <div>
+              <RadioFormInput
+                checked={true}
+                handleChange={[Function]}
+                id="role-agent"
+                name="role"
+                title="Agent"
+                value="agent"
+              />
+              <RadioFormInput
+                checked={false}
+                handleChange={[Function]}
+                id="role-model"
+                name="role"
+                title="Model"
+                value="model"
+              />
+            </div>
+          </div>
+          <div
+            className="form-submit"
+          >
+            <input
+              type="submit"
+              value="Sign up"
+            />
+          </div>
+        </form>,
+        "className": "page centered",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <FormInput
+              handleChange={[Function]}
+              name="email"
+              placeholder="Enter your email"
+              title="Email"
+              type="email"
+              value=""
+            />,
+            <FormInput
+              handleChange={[Function]}
+              name="password"
+              placeholder="Enter your password"
+              title="Password"
+              type="password"
+              value=""
+            />,
+            <FormInput
+              handleChange={[Function]}
+              name="name"
+              placeholder="Enter your name"
+              title="Name"
+              type="text"
+              value=""
+            />,
+            <FormInput
+              handleChange={[Function]}
+              name="phoneNumber"
+              placeholder="Enter your phone number"
+              title="Phone"
+              type="tel"
+              value=""
+            />,
+            <div>
+              <label
+                htmlFor="role"
+              >
+                Role
+              </label>
+              <div>
+                <RadioFormInput
+                  checked={true}
+                  handleChange={[Function]}
+                  id="role-agent"
+                  name="role"
+                  title="Agent"
+                  value="agent"
+                />
+                <RadioFormInput
+                  checked={false}
+                  handleChange={[Function]}
+                  id="role-model"
+                  name="role"
+                  title="Model"
+                  value="model"
+                />
+              </div>
+            </div>,
+            <div
+              className="form-submit"
+            >
+              <input
+                type="submit"
+                value="Sign up"
+              />
+            </div>,
+          ],
+          "onSubmit": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "handleChange": [Function],
+              "name": "email",
+              "placeholder": "Enter your email",
+              "title": "Email",
+              "type": "email",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "handleChange": [Function],
+              "name": "password",
+              "placeholder": "Enter your password",
+              "title": "Password",
+              "type": "password",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "handleChange": [Function],
+              "name": "name",
+              "placeholder": "Enter your name",
+              "title": "Name",
+              "type": "text",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "handleChange": [Function],
+              "name": "phoneNumber",
+              "placeholder": "Enter your phone number",
+              "title": "Phone",
+              "type": "tel",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <label
+                  htmlFor="role"
+                >
+                  Role
+                </label>,
+                <div>
+                  <RadioFormInput
+                    checked={true}
+                    handleChange={[Function]}
+                    id="role-agent"
+                    name="role"
+                    title="Agent"
+                    value="agent"
+                  />
+                  <RadioFormInput
+                    checked={false}
+                    handleChange={[Function]}
+                    id="role-model"
+                    name="role"
+                    title="Model"
+                    value="model"
+                  />
+                </div>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Role",
+                  "htmlFor": "role",
+                },
+                "ref": null,
+                "rendered": "Role",
+                "type": "label",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <RadioFormInput
+                      checked={true}
+                      handleChange={[Function]}
+                      id="role-agent"
+                      name="role"
+                      title="Agent"
+                      value="agent"
+                    />,
+                    <RadioFormInput
+                      checked={false}
+                      handleChange={[Function]}
+                      id="role-model"
+                      name="role"
+                      title="Model"
+                      value="model"
+                    />,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "checked": true,
+                      "handleChange": [Function],
+                      "id": "role-agent",
+                      "name": "role",
+                      "title": "Agent",
+                      "value": "agent",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "checked": false,
+                      "handleChange": [Function],
+                      "id": "role-model",
+                      "name": "role",
+                      "title": "Model",
+                      "value": "model",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <input
+                type="submit"
+                value="Sign up"
+              />,
+              "className": "form-submit",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "type": "submit",
+                "value": "Sign up",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            "type": "div",
+          },
+        ],
+        "type": "form",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "context": Object {
+      "updateUser": [MockFunction],
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

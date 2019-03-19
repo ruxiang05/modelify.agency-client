@@ -1,0 +1,1726 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EditProfile should render EditProfile 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <EditProfile
+    email="email@email.com"
+    modelInfo={
+      Object {
+        "address": "123 Street",
+        "characteristics": Object {
+          "eyes": "blue",
+          "hair": "blonde",
+          "skin": "white",
+        },
+        "dateOfBirth": "01/01/1970",
+        "measurements": Object {
+          "chest": "90",
+          "height": "170",
+          "hips": "90",
+          "waist": "60",
+          "weight": "50",
+        },
+      }
+    }
+    name="name"
+    phoneNumber="123"
+    role="model"
+    toggleEdit={[MockFunction]}
+    updateUser={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <PageHeader
+          backButton={true}
+          goBackAction={[MockFunction]}
+          title="Edit"
+        />,
+        <div
+          className="page"
+        >
+          <form
+            onSubmit={[Function]}
+          >
+            <h2>
+              Account Details
+            </h2>
+            <FormInput
+              handleChange={[Function]}
+              name="email"
+              placeholder="Enter your email"
+              title="Email"
+              type="text"
+              value="email@email.com"
+            />
+            <FormInput
+              handleChange={[Function]}
+              name="name"
+              placeholder="Enter your name"
+              title="Name"
+              type="text"
+              value="name"
+            />
+            <FormInput
+              handleChange={[Function]}
+              name="phoneNumber"
+              placeholder="Enter your phone number"
+              title="Phone"
+              type="text"
+              value="123"
+            />
+            <React.Fragment>
+              <p>
+                Model Details
+              </p>
+              <FormInput
+                handleChange={[Function]}
+                name="dateOfBirth"
+                placeholder=""
+                title="Date Of Birth"
+                type="date"
+                value="01/01/1970"
+              />
+              <FormInput
+                handleChange={[Function]}
+                name="address"
+                placeholder="Address"
+                title="Enter your address"
+                type="text"
+                value="123 Street"
+              />
+              <h2>
+                Characteristics
+              </h2>
+              <FormInput
+                handleChange={[Function]}
+                name="eyes"
+                placeholder="Enter your eye colour"
+                title="Eye Colour"
+                type="text"
+                value="blue"
+              />
+              <FormInput
+                handleChange={[Function]}
+                name="hair"
+                placeholder="Enter your hair Colour"
+                title="Hair colour"
+                type="text"
+                value="blonde"
+              />
+              <FormInput
+                handleChange={[Function]}
+                name="skin"
+                placeholder="Enter your skin"
+                title="Skin Colour"
+                type="text"
+                value="white"
+              />
+              <h2>
+                Measurements
+              </h2>
+              <FormInput
+                handleChange={[Function]}
+                name="height"
+                placeholder="Enter our height"
+                title="Height"
+                type="text"
+                value="170"
+              />
+              <FormInput
+                handleChange={[Function]}
+                name="weight"
+                placeholder="Enter our weight"
+                title="Weight"
+                type="text"
+                value="50"
+              />
+              <FormInput
+                handleChange={[Function]}
+                name="chest"
+                placeholder="Enter our chest size"
+                title="Chest"
+                type="text"
+                value="90"
+              />
+              <FormInput
+                handleChange={[Function]}
+                name="waist"
+                placeholder="Enter our waist size"
+                title="Waist"
+                type="text"
+                value="60"
+              />
+              <FormInput
+                handleChange={[Function]}
+                name="hips"
+                placeholder="Enter your hip size"
+                title="Hips"
+                type="text"
+                value="90"
+              />
+            </React.Fragment>
+            <div
+              className="form-submit"
+            >
+              <input
+                type="submit"
+                value="Done"
+              />
+            </div>
+          </form>
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "action": undefined,
+          "actionAltText": undefined,
+          "actionIcon": undefined,
+          "backButton": true,
+          "goBackAction": [MockFunction],
+          "history": undefined,
+          "title": "Edit",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <form
+            onSubmit={[Function]}
+          >
+            <h2>
+              Account Details
+            </h2>
+            <FormInput
+              handleChange={[Function]}
+              name="email"
+              placeholder="Enter your email"
+              title="Email"
+              type="text"
+              value="email@email.com"
+            />
+            <FormInput
+              handleChange={[Function]}
+              name="name"
+              placeholder="Enter your name"
+              title="Name"
+              type="text"
+              value="name"
+            />
+            <FormInput
+              handleChange={[Function]}
+              name="phoneNumber"
+              placeholder="Enter your phone number"
+              title="Phone"
+              type="text"
+              value="123"
+            />
+            <React.Fragment>
+              <p>
+                Model Details
+              </p>
+              <FormInput
+                handleChange={[Function]}
+                name="dateOfBirth"
+                placeholder=""
+                title="Date Of Birth"
+                type="date"
+                value="01/01/1970"
+              />
+              <FormInput
+                handleChange={[Function]}
+                name="address"
+                placeholder="Address"
+                title="Enter your address"
+                type="text"
+                value="123 Street"
+              />
+              <h2>
+                Characteristics
+              </h2>
+              <FormInput
+                handleChange={[Function]}
+                name="eyes"
+                placeholder="Enter your eye colour"
+                title="Eye Colour"
+                type="text"
+                value="blue"
+              />
+              <FormInput
+                handleChange={[Function]}
+                name="hair"
+                placeholder="Enter your hair Colour"
+                title="Hair colour"
+                type="text"
+                value="blonde"
+              />
+              <FormInput
+                handleChange={[Function]}
+                name="skin"
+                placeholder="Enter your skin"
+                title="Skin Colour"
+                type="text"
+                value="white"
+              />
+              <h2>
+                Measurements
+              </h2>
+              <FormInput
+                handleChange={[Function]}
+                name="height"
+                placeholder="Enter our height"
+                title="Height"
+                type="text"
+                value="170"
+              />
+              <FormInput
+                handleChange={[Function]}
+                name="weight"
+                placeholder="Enter our weight"
+                title="Weight"
+                type="text"
+                value="50"
+              />
+              <FormInput
+                handleChange={[Function]}
+                name="chest"
+                placeholder="Enter our chest size"
+                title="Chest"
+                type="text"
+                value="90"
+              />
+              <FormInput
+                handleChange={[Function]}
+                name="waist"
+                placeholder="Enter our waist size"
+                title="Waist"
+                type="text"
+                value="60"
+              />
+              <FormInput
+                handleChange={[Function]}
+                name="hips"
+                placeholder="Enter your hip size"
+                title="Hips"
+                type="text"
+                value="90"
+              />
+            </React.Fragment>
+            <div
+              className="form-submit"
+            >
+              <input
+                type="submit"
+                value="Done"
+              />
+            </div>
+          </form>,
+          "className": "page",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2>
+                Account Details
+              </h2>,
+              <FormInput
+                handleChange={[Function]}
+                name="email"
+                placeholder="Enter your email"
+                title="Email"
+                type="text"
+                value="email@email.com"
+              />,
+              <FormInput
+                handleChange={[Function]}
+                name="name"
+                placeholder="Enter your name"
+                title="Name"
+                type="text"
+                value="name"
+              />,
+              <FormInput
+                handleChange={[Function]}
+                name="phoneNumber"
+                placeholder="Enter your phone number"
+                title="Phone"
+                type="text"
+                value="123"
+              />,
+              <React.Fragment>
+                <p>
+                  Model Details
+                </p>
+                <FormInput
+                  handleChange={[Function]}
+                  name="dateOfBirth"
+                  placeholder=""
+                  title="Date Of Birth"
+                  type="date"
+                  value="01/01/1970"
+                />
+                <FormInput
+                  handleChange={[Function]}
+                  name="address"
+                  placeholder="Address"
+                  title="Enter your address"
+                  type="text"
+                  value="123 Street"
+                />
+                <h2>
+                  Characteristics
+                </h2>
+                <FormInput
+                  handleChange={[Function]}
+                  name="eyes"
+                  placeholder="Enter your eye colour"
+                  title="Eye Colour"
+                  type="text"
+                  value="blue"
+                />
+                <FormInput
+                  handleChange={[Function]}
+                  name="hair"
+                  placeholder="Enter your hair Colour"
+                  title="Hair colour"
+                  type="text"
+                  value="blonde"
+                />
+                <FormInput
+                  handleChange={[Function]}
+                  name="skin"
+                  placeholder="Enter your skin"
+                  title="Skin Colour"
+                  type="text"
+                  value="white"
+                />
+                <h2>
+                  Measurements
+                </h2>
+                <FormInput
+                  handleChange={[Function]}
+                  name="height"
+                  placeholder="Enter our height"
+                  title="Height"
+                  type="text"
+                  value="170"
+                />
+                <FormInput
+                  handleChange={[Function]}
+                  name="weight"
+                  placeholder="Enter our weight"
+                  title="Weight"
+                  type="text"
+                  value="50"
+                />
+                <FormInput
+                  handleChange={[Function]}
+                  name="chest"
+                  placeholder="Enter our chest size"
+                  title="Chest"
+                  type="text"
+                  value="90"
+                />
+                <FormInput
+                  handleChange={[Function]}
+                  name="waist"
+                  placeholder="Enter our waist size"
+                  title="Waist"
+                  type="text"
+                  value="60"
+                />
+                <FormInput
+                  handleChange={[Function]}
+                  name="hips"
+                  placeholder="Enter your hip size"
+                  title="Hips"
+                  type="text"
+                  value="90"
+                />
+              </React.Fragment>,
+              <div
+                className="form-submit"
+              >
+                <input
+                  type="submit"
+                  value="Done"
+                />
+              </div>,
+            ],
+            "onSubmit": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Account Details",
+              },
+              "ref": null,
+              "rendered": "Account Details",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "handleChange": [Function],
+                "name": "email",
+                "placeholder": "Enter your email",
+                "title": "Email",
+                "type": "text",
+                "value": "email@email.com",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "handleChange": [Function],
+                "name": "name",
+                "placeholder": "Enter your name",
+                "title": "Name",
+                "type": "text",
+                "value": "name",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "handleChange": [Function],
+                "name": "phoneNumber",
+                "placeholder": "Enter your phone number",
+                "title": "Phone",
+                "type": "text",
+                "value": "123",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    Model Details
+                  </p>,
+                  <FormInput
+                    handleChange={[Function]}
+                    name="dateOfBirth"
+                    placeholder=""
+                    title="Date Of Birth"
+                    type="date"
+                    value="01/01/1970"
+                  />,
+                  <FormInput
+                    handleChange={[Function]}
+                    name="address"
+                    placeholder="Address"
+                    title="Enter your address"
+                    type="text"
+                    value="123 Street"
+                  />,
+                  <h2>
+                    Characteristics
+                  </h2>,
+                  <FormInput
+                    handleChange={[Function]}
+                    name="eyes"
+                    placeholder="Enter your eye colour"
+                    title="Eye Colour"
+                    type="text"
+                    value="blue"
+                  />,
+                  <FormInput
+                    handleChange={[Function]}
+                    name="hair"
+                    placeholder="Enter your hair Colour"
+                    title="Hair colour"
+                    type="text"
+                    value="blonde"
+                  />,
+                  <FormInput
+                    handleChange={[Function]}
+                    name="skin"
+                    placeholder="Enter your skin"
+                    title="Skin Colour"
+                    type="text"
+                    value="white"
+                  />,
+                  <h2>
+                    Measurements
+                  </h2>,
+                  <FormInput
+                    handleChange={[Function]}
+                    name="height"
+                    placeholder="Enter our height"
+                    title="Height"
+                    type="text"
+                    value="170"
+                  />,
+                  <FormInput
+                    handleChange={[Function]}
+                    name="weight"
+                    placeholder="Enter our weight"
+                    title="Weight"
+                    type="text"
+                    value="50"
+                  />,
+                  <FormInput
+                    handleChange={[Function]}
+                    name="chest"
+                    placeholder="Enter our chest size"
+                    title="Chest"
+                    type="text"
+                    value="90"
+                  />,
+                  <FormInput
+                    handleChange={[Function]}
+                    name="waist"
+                    placeholder="Enter our waist size"
+                    title="Waist"
+                    type="text"
+                    value="60"
+                  />,
+                  <FormInput
+                    handleChange={[Function]}
+                    name="hips"
+                    placeholder="Enter your hip size"
+                    title="Hips"
+                    type="text"
+                    value="90"
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Model Details",
+                  },
+                  "ref": null,
+                  "rendered": "Model Details",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handleChange": [Function],
+                    "name": "dateOfBirth",
+                    "placeholder": "",
+                    "title": "Date Of Birth",
+                    "type": "date",
+                    "value": "01/01/1970",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handleChange": [Function],
+                    "name": "address",
+                    "placeholder": "Address",
+                    "title": "Enter your address",
+                    "type": "text",
+                    "value": "123 Street",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Characteristics",
+                  },
+                  "ref": null,
+                  "rendered": "Characteristics",
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handleChange": [Function],
+                    "name": "eyes",
+                    "placeholder": "Enter your eye colour",
+                    "title": "Eye Colour",
+                    "type": "text",
+                    "value": "blue",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handleChange": [Function],
+                    "name": "hair",
+                    "placeholder": "Enter your hair Colour",
+                    "title": "Hair colour",
+                    "type": "text",
+                    "value": "blonde",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handleChange": [Function],
+                    "name": "skin",
+                    "placeholder": "Enter your skin",
+                    "title": "Skin Colour",
+                    "type": "text",
+                    "value": "white",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Measurements",
+                  },
+                  "ref": null,
+                  "rendered": "Measurements",
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handleChange": [Function],
+                    "name": "height",
+                    "placeholder": "Enter our height",
+                    "title": "Height",
+                    "type": "text",
+                    "value": "170",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handleChange": [Function],
+                    "name": "weight",
+                    "placeholder": "Enter our weight",
+                    "title": "Weight",
+                    "type": "text",
+                    "value": "50",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handleChange": [Function],
+                    "name": "chest",
+                    "placeholder": "Enter our chest size",
+                    "title": "Chest",
+                    "type": "text",
+                    "value": "90",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handleChange": [Function],
+                    "name": "waist",
+                    "placeholder": "Enter our waist size",
+                    "title": "Waist",
+                    "type": "text",
+                    "value": "60",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handleChange": [Function],
+                    "name": "hips",
+                    "placeholder": "Enter your hip size",
+                    "title": "Hips",
+                    "type": "text",
+                    "value": "90",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": Symbol(react.fragment),
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <input
+                  type="submit"
+                  value="Done"
+                />,
+                "className": "form-submit",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "type": "submit",
+                  "value": "Done",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              "type": "div",
+            },
+          ],
+          "type": "form",
+        },
+        "type": "div",
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <PageHeader
+            backButton={true}
+            goBackAction={[MockFunction]}
+            title="Edit"
+          />,
+          <div
+            className="page"
+          >
+            <form
+              onSubmit={[Function]}
+            >
+              <h2>
+                Account Details
+              </h2>
+              <FormInput
+                handleChange={[Function]}
+                name="email"
+                placeholder="Enter your email"
+                title="Email"
+                type="text"
+                value="email@email.com"
+              />
+              <FormInput
+                handleChange={[Function]}
+                name="name"
+                placeholder="Enter your name"
+                title="Name"
+                type="text"
+                value="name"
+              />
+              <FormInput
+                handleChange={[Function]}
+                name="phoneNumber"
+                placeholder="Enter your phone number"
+                title="Phone"
+                type="text"
+                value="123"
+              />
+              <React.Fragment>
+                <p>
+                  Model Details
+                </p>
+                <FormInput
+                  handleChange={[Function]}
+                  name="dateOfBirth"
+                  placeholder=""
+                  title="Date Of Birth"
+                  type="date"
+                  value="01/01/1970"
+                />
+                <FormInput
+                  handleChange={[Function]}
+                  name="address"
+                  placeholder="Address"
+                  title="Enter your address"
+                  type="text"
+                  value="123 Street"
+                />
+                <h2>
+                  Characteristics
+                </h2>
+                <FormInput
+                  handleChange={[Function]}
+                  name="eyes"
+                  placeholder="Enter your eye colour"
+                  title="Eye Colour"
+                  type="text"
+                  value="blue"
+                />
+                <FormInput
+                  handleChange={[Function]}
+                  name="hair"
+                  placeholder="Enter your hair Colour"
+                  title="Hair colour"
+                  type="text"
+                  value="blonde"
+                />
+                <FormInput
+                  handleChange={[Function]}
+                  name="skin"
+                  placeholder="Enter your skin"
+                  title="Skin Colour"
+                  type="text"
+                  value="white"
+                />
+                <h2>
+                  Measurements
+                </h2>
+                <FormInput
+                  handleChange={[Function]}
+                  name="height"
+                  placeholder="Enter our height"
+                  title="Height"
+                  type="text"
+                  value="170"
+                />
+                <FormInput
+                  handleChange={[Function]}
+                  name="weight"
+                  placeholder="Enter our weight"
+                  title="Weight"
+                  type="text"
+                  value="50"
+                />
+                <FormInput
+                  handleChange={[Function]}
+                  name="chest"
+                  placeholder="Enter our chest size"
+                  title="Chest"
+                  type="text"
+                  value="90"
+                />
+                <FormInput
+                  handleChange={[Function]}
+                  name="waist"
+                  placeholder="Enter our waist size"
+                  title="Waist"
+                  type="text"
+                  value="60"
+                />
+                <FormInput
+                  handleChange={[Function]}
+                  name="hips"
+                  placeholder="Enter your hip size"
+                  title="Hips"
+                  type="text"
+                  value="90"
+                />
+              </React.Fragment>
+              <div
+                className="form-submit"
+              >
+                <input
+                  type="submit"
+                  value="Done"
+                />
+              </div>
+            </form>
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "action": undefined,
+            "actionAltText": undefined,
+            "actionIcon": undefined,
+            "backButton": true,
+            "goBackAction": [MockFunction],
+            "history": undefined,
+            "title": "Edit",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <form
+              onSubmit={[Function]}
+            >
+              <h2>
+                Account Details
+              </h2>
+              <FormInput
+                handleChange={[Function]}
+                name="email"
+                placeholder="Enter your email"
+                title="Email"
+                type="text"
+                value="email@email.com"
+              />
+              <FormInput
+                handleChange={[Function]}
+                name="name"
+                placeholder="Enter your name"
+                title="Name"
+                type="text"
+                value="name"
+              />
+              <FormInput
+                handleChange={[Function]}
+                name="phoneNumber"
+                placeholder="Enter your phone number"
+                title="Phone"
+                type="text"
+                value="123"
+              />
+              <React.Fragment>
+                <p>
+                  Model Details
+                </p>
+                <FormInput
+                  handleChange={[Function]}
+                  name="dateOfBirth"
+                  placeholder=""
+                  title="Date Of Birth"
+                  type="date"
+                  value="01/01/1970"
+                />
+                <FormInput
+                  handleChange={[Function]}
+                  name="address"
+                  placeholder="Address"
+                  title="Enter your address"
+                  type="text"
+                  value="123 Street"
+                />
+                <h2>
+                  Characteristics
+                </h2>
+                <FormInput
+                  handleChange={[Function]}
+                  name="eyes"
+                  placeholder="Enter your eye colour"
+                  title="Eye Colour"
+                  type="text"
+                  value="blue"
+                />
+                <FormInput
+                  handleChange={[Function]}
+                  name="hair"
+                  placeholder="Enter your hair Colour"
+                  title="Hair colour"
+                  type="text"
+                  value="blonde"
+                />
+                <FormInput
+                  handleChange={[Function]}
+                  name="skin"
+                  placeholder="Enter your skin"
+                  title="Skin Colour"
+                  type="text"
+                  value="white"
+                />
+                <h2>
+                  Measurements
+                </h2>
+                <FormInput
+                  handleChange={[Function]}
+                  name="height"
+                  placeholder="Enter our height"
+                  title="Height"
+                  type="text"
+                  value="170"
+                />
+                <FormInput
+                  handleChange={[Function]}
+                  name="weight"
+                  placeholder="Enter our weight"
+                  title="Weight"
+                  type="text"
+                  value="50"
+                />
+                <FormInput
+                  handleChange={[Function]}
+                  name="chest"
+                  placeholder="Enter our chest size"
+                  title="Chest"
+                  type="text"
+                  value="90"
+                />
+                <FormInput
+                  handleChange={[Function]}
+                  name="waist"
+                  placeholder="Enter our waist size"
+                  title="Waist"
+                  type="text"
+                  value="60"
+                />
+                <FormInput
+                  handleChange={[Function]}
+                  name="hips"
+                  placeholder="Enter your hip size"
+                  title="Hips"
+                  type="text"
+                  value="90"
+                />
+              </React.Fragment>
+              <div
+                className="form-submit"
+              >
+                <input
+                  type="submit"
+                  value="Done"
+                />
+              </div>
+            </form>,
+            "className": "page",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2>
+                  Account Details
+                </h2>,
+                <FormInput
+                  handleChange={[Function]}
+                  name="email"
+                  placeholder="Enter your email"
+                  title="Email"
+                  type="text"
+                  value="email@email.com"
+                />,
+                <FormInput
+                  handleChange={[Function]}
+                  name="name"
+                  placeholder="Enter your name"
+                  title="Name"
+                  type="text"
+                  value="name"
+                />,
+                <FormInput
+                  handleChange={[Function]}
+                  name="phoneNumber"
+                  placeholder="Enter your phone number"
+                  title="Phone"
+                  type="text"
+                  value="123"
+                />,
+                <React.Fragment>
+                  <p>
+                    Model Details
+                  </p>
+                  <FormInput
+                    handleChange={[Function]}
+                    name="dateOfBirth"
+                    placeholder=""
+                    title="Date Of Birth"
+                    type="date"
+                    value="01/01/1970"
+                  />
+                  <FormInput
+                    handleChange={[Function]}
+                    name="address"
+                    placeholder="Address"
+                    title="Enter your address"
+                    type="text"
+                    value="123 Street"
+                  />
+                  <h2>
+                    Characteristics
+                  </h2>
+                  <FormInput
+                    handleChange={[Function]}
+                    name="eyes"
+                    placeholder="Enter your eye colour"
+                    title="Eye Colour"
+                    type="text"
+                    value="blue"
+                  />
+                  <FormInput
+                    handleChange={[Function]}
+                    name="hair"
+                    placeholder="Enter your hair Colour"
+                    title="Hair colour"
+                    type="text"
+                    value="blonde"
+                  />
+                  <FormInput
+                    handleChange={[Function]}
+                    name="skin"
+                    placeholder="Enter your skin"
+                    title="Skin Colour"
+                    type="text"
+                    value="white"
+                  />
+                  <h2>
+                    Measurements
+                  </h2>
+                  <FormInput
+                    handleChange={[Function]}
+                    name="height"
+                    placeholder="Enter our height"
+                    title="Height"
+                    type="text"
+                    value="170"
+                  />
+                  <FormInput
+                    handleChange={[Function]}
+                    name="weight"
+                    placeholder="Enter our weight"
+                    title="Weight"
+                    type="text"
+                    value="50"
+                  />
+                  <FormInput
+                    handleChange={[Function]}
+                    name="chest"
+                    placeholder="Enter our chest size"
+                    title="Chest"
+                    type="text"
+                    value="90"
+                  />
+                  <FormInput
+                    handleChange={[Function]}
+                    name="waist"
+                    placeholder="Enter our waist size"
+                    title="Waist"
+                    type="text"
+                    value="60"
+                  />
+                  <FormInput
+                    handleChange={[Function]}
+                    name="hips"
+                    placeholder="Enter your hip size"
+                    title="Hips"
+                    type="text"
+                    value="90"
+                  />
+                </React.Fragment>,
+                <div
+                  className="form-submit"
+                >
+                  <input
+                    type="submit"
+                    value="Done"
+                  />
+                </div>,
+              ],
+              "onSubmit": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Account Details",
+                },
+                "ref": null,
+                "rendered": "Account Details",
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "handleChange": [Function],
+                  "name": "email",
+                  "placeholder": "Enter your email",
+                  "title": "Email",
+                  "type": "text",
+                  "value": "email@email.com",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "handleChange": [Function],
+                  "name": "name",
+                  "placeholder": "Enter your name",
+                  "title": "Name",
+                  "type": "text",
+                  "value": "name",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "handleChange": [Function],
+                  "name": "phoneNumber",
+                  "placeholder": "Enter your phone number",
+                  "title": "Phone",
+                  "type": "text",
+                  "value": "123",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    <p>
+                      Model Details
+                    </p>,
+                    <FormInput
+                      handleChange={[Function]}
+                      name="dateOfBirth"
+                      placeholder=""
+                      title="Date Of Birth"
+                      type="date"
+                      value="01/01/1970"
+                    />,
+                    <FormInput
+                      handleChange={[Function]}
+                      name="address"
+                      placeholder="Address"
+                      title="Enter your address"
+                      type="text"
+                      value="123 Street"
+                    />,
+                    <h2>
+                      Characteristics
+                    </h2>,
+                    <FormInput
+                      handleChange={[Function]}
+                      name="eyes"
+                      placeholder="Enter your eye colour"
+                      title="Eye Colour"
+                      type="text"
+                      value="blue"
+                    />,
+                    <FormInput
+                      handleChange={[Function]}
+                      name="hair"
+                      placeholder="Enter your hair Colour"
+                      title="Hair colour"
+                      type="text"
+                      value="blonde"
+                    />,
+                    <FormInput
+                      handleChange={[Function]}
+                      name="skin"
+                      placeholder="Enter your skin"
+                      title="Skin Colour"
+                      type="text"
+                      value="white"
+                    />,
+                    <h2>
+                      Measurements
+                    </h2>,
+                    <FormInput
+                      handleChange={[Function]}
+                      name="height"
+                      placeholder="Enter our height"
+                      title="Height"
+                      type="text"
+                      value="170"
+                    />,
+                    <FormInput
+                      handleChange={[Function]}
+                      name="weight"
+                      placeholder="Enter our weight"
+                      title="Weight"
+                      type="text"
+                      value="50"
+                    />,
+                    <FormInput
+                      handleChange={[Function]}
+                      name="chest"
+                      placeholder="Enter our chest size"
+                      title="Chest"
+                      type="text"
+                      value="90"
+                    />,
+                    <FormInput
+                      handleChange={[Function]}
+                      name="waist"
+                      placeholder="Enter our waist size"
+                      title="Waist"
+                      type="text"
+                      value="60"
+                    />,
+                    <FormInput
+                      handleChange={[Function]}
+                      name="hips"
+                      placeholder="Enter your hip size"
+                      title="Hips"
+                      type="text"
+                      value="90"
+                    />,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Model Details",
+                    },
+                    "ref": null,
+                    "rendered": "Model Details",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "handleChange": [Function],
+                      "name": "dateOfBirth",
+                      "placeholder": "",
+                      "title": "Date Of Birth",
+                      "type": "date",
+                      "value": "01/01/1970",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "handleChange": [Function],
+                      "name": "address",
+                      "placeholder": "Address",
+                      "title": "Enter your address",
+                      "type": "text",
+                      "value": "123 Street",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Characteristics",
+                    },
+                    "ref": null,
+                    "rendered": "Characteristics",
+                    "type": "h2",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "handleChange": [Function],
+                      "name": "eyes",
+                      "placeholder": "Enter your eye colour",
+                      "title": "Eye Colour",
+                      "type": "text",
+                      "value": "blue",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "handleChange": [Function],
+                      "name": "hair",
+                      "placeholder": "Enter your hair Colour",
+                      "title": "Hair colour",
+                      "type": "text",
+                      "value": "blonde",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "handleChange": [Function],
+                      "name": "skin",
+                      "placeholder": "Enter your skin",
+                      "title": "Skin Colour",
+                      "type": "text",
+                      "value": "white",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Measurements",
+                    },
+                    "ref": null,
+                    "rendered": "Measurements",
+                    "type": "h2",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "handleChange": [Function],
+                      "name": "height",
+                      "placeholder": "Enter our height",
+                      "title": "Height",
+                      "type": "text",
+                      "value": "170",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "handleChange": [Function],
+                      "name": "weight",
+                      "placeholder": "Enter our weight",
+                      "title": "Weight",
+                      "type": "text",
+                      "value": "50",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "handleChange": [Function],
+                      "name": "chest",
+                      "placeholder": "Enter our chest size",
+                      "title": "Chest",
+                      "type": "text",
+                      "value": "90",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "handleChange": [Function],
+                      "name": "waist",
+                      "placeholder": "Enter our waist size",
+                      "title": "Waist",
+                      "type": "text",
+                      "value": "60",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "handleChange": [Function],
+                      "name": "hips",
+                      "placeholder": "Enter your hip size",
+                      "title": "Hips",
+                      "type": "text",
+                      "value": "90",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": Symbol(react.fragment),
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <input
+                    type="submit"
+                    value="Done"
+                  />,
+                  "className": "form-submit",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "type": "submit",
+                    "value": "Done",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                "type": "div",
+              },
+            ],
+            "type": "form",
+          },
+          "type": "div",
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

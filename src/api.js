@@ -8,14 +8,26 @@ const api = {
       headers: {
         'Content-Type': 'application/json',
       },
-    }),
+    })
+      .then((res, err) => {
+        if (err) {
+          return err;
+        }
+        return res.json();
+      }),
     login: data => fetch(`${url}/users/login`, {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {
         'Content-Type': 'application/json',
       },
-    }),
+    })
+      .then((res, err) => {
+        if (err) {
+          return err;
+        }
+        return res.json();
+      }),
     editProfile: (token, data) => fetch(`${url}/users/edit`, {
       method: 'PUT',
       body: JSON.stringify(data),

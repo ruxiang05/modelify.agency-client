@@ -26,9 +26,7 @@ const Header = ({ user }) => (
         )}
         {user.role === 'agent' && (
         <li>
-          <Link
-            to="/jobs/new"
-          >
+          <Link to="/jobs/new">
             <AddIcon />
           </Link>
         </li>
