@@ -44,12 +44,6 @@ class Signup extends React.Component {
         }
         return err;
       })
-      .then((res, err) => {
-        if (err) {
-          return err;
-        }
-        return res.json();
-      })
       .then((data) => {
         setToken(data.token);
         updateUser();

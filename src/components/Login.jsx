@@ -33,12 +33,6 @@ class Login extends React.Component {
     event.preventDefault();
     api.users
       .login(user)
-      .then((res, err) => {
-        if (err) {
-          return err;
-        }
-        return res.json();
-      })
       .then((data) => {
         setToken(data.token);
         updateUser();

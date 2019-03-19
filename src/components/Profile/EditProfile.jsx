@@ -49,7 +49,6 @@ class EditProfile extends React.Component {
     });
   }
 
-  /* eslint-disable class-methods-use-this */
   formatModel(model) {
     const {
       dateOfBirth, address, eyes, hair, skin, height, weight, chest, waist, hips,
@@ -71,7 +70,6 @@ class EditProfile extends React.Component {
       },
     };
   }
-  /* eslint-enable class-methods-use-this */
 
   handleChange(event) {
     const { name, value } = event.target;

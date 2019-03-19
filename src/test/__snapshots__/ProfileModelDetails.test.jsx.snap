@@ -1,0 +1,1041 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProfileModelDetails renders ProfileModelDetails 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ProfileModelDetails
+    user={
+      Object {
+        "email": "email@email.com",
+        "modelInfo": Object {
+          "address": "123 Street",
+          "characteristics": Object {
+            "eyes": "blue",
+            "hair": "blonde",
+            "skin": "white",
+          },
+          "dateOfBirth": "01/01/1970",
+          "measurements": Object {
+            "chest": "90",
+            "height": "170",
+            "hips": "90",
+            "waist": "60",
+            "weight": "50",
+          },
+        },
+        "name": "name",
+        "phoneNumber": "123",
+        "role": "model",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2>
+          Characteristics
+        </h2>,
+        <ul
+          className="characteristics"
+        >
+          <li>
+            Eyes
+            <span>
+              blue
+            </span>
+          </li>
+          <li>
+            Hair
+            <span>
+              blonde
+            </span>
+          </li>
+          <li>
+            Skin
+            <span>
+              white
+            </span>
+          </li>
+        </ul>,
+        <h2>
+          Measurements
+        </h2>,
+        <ul
+          className="measurements"
+        >
+          <div>
+            <li>
+              Height
+              <span>
+                170
+              </span>
+            </li>
+            <li>
+              Weight
+              <span>
+                50
+              </span>
+            </li>
+          </div>
+          <div>
+            <li>
+              Chest
+              <span>
+                90
+              </span>
+            </li>
+            <li>
+              Waist
+              <span>
+                60
+              </span>
+            </li>
+            <li>
+              Hips
+              <span>
+                90
+              </span>
+            </li>
+          </div>
+        </ul>,
+        <p
+          className="disclosure"
+        >
+          Measurements are in cm
+        </p>,
+      ],
+      "className": "profile-model-details",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Characteristics",
+        },
+        "ref": null,
+        "rendered": "Characteristics",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <li>
+              Eyes
+              <span>
+                blue
+              </span>
+            </li>,
+            <li>
+              Hair
+              <span>
+                blonde
+              </span>
+            </li>,
+            <li>
+              Skin
+              <span>
+                white
+              </span>
+            </li>,
+          ],
+          "className": "characteristics",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Eyes",
+                <span>
+                  blue
+                </span>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Eyes",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "blue",
+                },
+                "ref": null,
+                "rendered": "blue",
+                "type": "span",
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Hair",
+                <span>
+                  blonde
+                </span>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Hair",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "blonde",
+                },
+                "ref": null,
+                "rendered": "blonde",
+                "type": "span",
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Skin",
+                <span>
+                  white
+                </span>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Skin",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "white",
+                },
+                "ref": null,
+                "rendered": "white",
+                "type": "span",
+              },
+            ],
+            "type": "li",
+          },
+        ],
+        "type": "ul",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Measurements",
+        },
+        "ref": null,
+        "rendered": "Measurements",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div>
+              <li>
+                Height
+                <span>
+                  170
+                </span>
+              </li>
+              <li>
+                Weight
+                <span>
+                  50
+                </span>
+              </li>
+            </div>,
+            <div>
+              <li>
+                Chest
+                <span>
+                  90
+                </span>
+              </li>
+              <li>
+                Waist
+                <span>
+                  60
+                </span>
+              </li>
+              <li>
+                Hips
+                <span>
+                  90
+                </span>
+              </li>
+            </div>,
+          ],
+          "className": "measurements",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li>
+                  Height
+                  <span>
+                    170
+                  </span>
+                </li>,
+                <li>
+                  Weight
+                  <span>
+                    50
+                  </span>
+                </li>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Height",
+                    <span>
+                      170
+                    </span>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Height",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "170",
+                    },
+                    "ref": null,
+                    "rendered": "170",
+                    "type": "span",
+                  },
+                ],
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Weight",
+                    <span>
+                      50
+                    </span>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Weight",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "50",
+                    },
+                    "ref": null,
+                    "rendered": "50",
+                    "type": "span",
+                  },
+                ],
+                "type": "li",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li>
+                  Chest
+                  <span>
+                    90
+                  </span>
+                </li>,
+                <li>
+                  Waist
+                  <span>
+                    60
+                  </span>
+                </li>,
+                <li>
+                  Hips
+                  <span>
+                    90
+                  </span>
+                </li>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Chest",
+                    <span>
+                      90
+                    </span>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Chest",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "90",
+                    },
+                    "ref": null,
+                    "rendered": "90",
+                    "type": "span",
+                  },
+                ],
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Waist",
+                    <span>
+                      60
+                    </span>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Waist",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "60",
+                    },
+                    "ref": null,
+                    "rendered": "60",
+                    "type": "span",
+                  },
+                ],
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Hips",
+                    <span>
+                      90
+                    </span>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Hips",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "90",
+                    },
+                    "ref": null,
+                    "rendered": "90",
+                    "type": "span",
+                  },
+                ],
+                "type": "li",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "ul",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Measurements are in cm",
+          "className": "disclosure",
+        },
+        "ref": null,
+        "rendered": "Measurements are in cm",
+        "type": "p",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2>
+            Characteristics
+          </h2>,
+          <ul
+            className="characteristics"
+          >
+            <li>
+              Eyes
+              <span>
+                blue
+              </span>
+            </li>
+            <li>
+              Hair
+              <span>
+                blonde
+              </span>
+            </li>
+            <li>
+              Skin
+              <span>
+                white
+              </span>
+            </li>
+          </ul>,
+          <h2>
+            Measurements
+          </h2>,
+          <ul
+            className="measurements"
+          >
+            <div>
+              <li>
+                Height
+                <span>
+                  170
+                </span>
+              </li>
+              <li>
+                Weight
+                <span>
+                  50
+                </span>
+              </li>
+            </div>
+            <div>
+              <li>
+                Chest
+                <span>
+                  90
+                </span>
+              </li>
+              <li>
+                Waist
+                <span>
+                  60
+                </span>
+              </li>
+              <li>
+                Hips
+                <span>
+                  90
+                </span>
+              </li>
+            </div>
+          </ul>,
+          <p
+            className="disclosure"
+          >
+            Measurements are in cm
+          </p>,
+        ],
+        "className": "profile-model-details",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Characteristics",
+          },
+          "ref": null,
+          "rendered": "Characteristics",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li>
+                Eyes
+                <span>
+                  blue
+                </span>
+              </li>,
+              <li>
+                Hair
+                <span>
+                  blonde
+                </span>
+              </li>,
+              <li>
+                Skin
+                <span>
+                  white
+                </span>
+              </li>,
+            ],
+            "className": "characteristics",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Eyes",
+                  <span>
+                    blue
+                  </span>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Eyes",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "blue",
+                  },
+                  "ref": null,
+                  "rendered": "blue",
+                  "type": "span",
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Hair",
+                  <span>
+                    blonde
+                  </span>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Hair",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "blonde",
+                  },
+                  "ref": null,
+                  "rendered": "blonde",
+                  "type": "span",
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Skin",
+                  <span>
+                    white
+                  </span>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Skin",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "white",
+                  },
+                  "ref": null,
+                  "rendered": "white",
+                  "type": "span",
+                },
+              ],
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Measurements",
+          },
+          "ref": null,
+          "rendered": "Measurements",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div>
+                <li>
+                  Height
+                  <span>
+                    170
+                  </span>
+                </li>
+                <li>
+                  Weight
+                  <span>
+                    50
+                  </span>
+                </li>
+              </div>,
+              <div>
+                <li>
+                  Chest
+                  <span>
+                    90
+                  </span>
+                </li>
+                <li>
+                  Waist
+                  <span>
+                    60
+                  </span>
+                </li>
+                <li>
+                  Hips
+                  <span>
+                    90
+                  </span>
+                </li>
+              </div>,
+            ],
+            "className": "measurements",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li>
+                    Height
+                    <span>
+                      170
+                    </span>
+                  </li>,
+                  <li>
+                    Weight
+                    <span>
+                      50
+                    </span>
+                  </li>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Height",
+                      <span>
+                        170
+                      </span>,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Height",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "170",
+                      },
+                      "ref": null,
+                      "rendered": "170",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Weight",
+                      <span>
+                        50
+                      </span>,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Weight",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "50",
+                      },
+                      "ref": null,
+                      "rendered": "50",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "li",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li>
+                    Chest
+                    <span>
+                      90
+                    </span>
+                  </li>,
+                  <li>
+                    Waist
+                    <span>
+                      60
+                    </span>
+                  </li>,
+                  <li>
+                    Hips
+                    <span>
+                      90
+                    </span>
+                  </li>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Chest",
+                      <span>
+                        90
+                      </span>,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Chest",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "90",
+                      },
+                      "ref": null,
+                      "rendered": "90",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Waist",
+                      <span>
+                        60
+                      </span>,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Waist",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "60",
+                      },
+                      "ref": null,
+                      "rendered": "60",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Hips",
+                      <span>
+                        90
+                      </span>,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Hips",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "90",
+                      },
+                      "ref": null,
+                      "rendered": "90",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "li",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "ul",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Measurements are in cm",
+            "className": "disclosure",
+          },
+          "ref": null,
+          "rendered": "Measurements are in cm",
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

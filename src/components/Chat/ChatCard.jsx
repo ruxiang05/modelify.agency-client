@@ -26,6 +26,6 @@ const ChatCard = ({ chat }) => (
 );
 
 ChatCard.propTypes = {
-  chat: PropTypes.shape({}).isRequired,
+  chat: PropTypes.object.isRequired,
 };
 export default ChatCard;

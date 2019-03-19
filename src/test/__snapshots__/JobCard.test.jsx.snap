@@ -1,0 +1,844 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JobCard should render JobCard 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <JobCard
+    job={
+      Object {
+        "_id": "5c97b9cd0328e6b2aa76a361",
+        "address": "address",
+        "agent": "5c686e904cb1b33456b0be58",
+        "date": "2019-05-26T00:00:00.000Z",
+        "description": "some description",
+        "model": "5c686eb24cb1b33456b0be59",
+        "pay": 100,
+        "status": "in progress",
+        "title": "Test",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <div
+        className="job-card"
+      >
+        <div
+          className="job-card-header"
+        >
+          <div>
+            <ForwardRef />
+            <p>
+              5/26/2019
+            </p>
+          </div>
+          <div>
+            <ForwardRef />
+            <p>
+              100
+            </p>
+          </div>
+        </div>
+        <div
+          className="job-card-content"
+        >
+          <h2>
+            Test
+          </h2>
+          <div>
+            <ForwardRef />
+            <p
+              className="truncate"
+            >
+              address
+            </p>
+          </div>
+          <div>
+            <ForwardRef />
+            <p
+              className="truncate"
+            >
+              some description
+            </p>
+          </div>
+        </div>
+        <div
+          className="job-card-footer"
+        >
+          <p>
+            IN PROGRESS
+          </p>
+        </div>
+      </div>,
+      "replace": false,
+      "to": Object {
+        "pathname": "/jobs/5c97b9cd0328e6b2aa76a361",
+        "state": Object {
+          "_id": "5c97b9cd0328e6b2aa76a361",
+          "address": "address",
+          "agent": "5c686e904cb1b33456b0be58",
+          "date": "2019-05-26T00:00:00.000Z",
+          "description": "some description",
+          "model": "5c686eb24cb1b33456b0be59",
+          "pay": 100,
+          "status": "in progress",
+          "title": "Test",
+        },
+      },
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="job-card-header"
+          >
+            <div>
+              <ForwardRef />
+              <p>
+                5/26/2019
+              </p>
+            </div>
+            <div>
+              <ForwardRef />
+              <p>
+                100
+              </p>
+            </div>
+          </div>,
+          <div
+            className="job-card-content"
+          >
+            <h2>
+              Test
+            </h2>
+            <div>
+              <ForwardRef />
+              <p
+                className="truncate"
+              >
+                address
+              </p>
+            </div>
+            <div>
+              <ForwardRef />
+              <p
+                className="truncate"
+              >
+                some description
+              </p>
+            </div>
+          </div>,
+          <div
+            className="job-card-footer"
+          >
+            <p>
+              IN PROGRESS
+            </p>
+          </div>,
+        ],
+        "className": "job-card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div>
+                <ForwardRef />
+                <p>
+                  5/26/2019
+                </p>
+              </div>,
+              <div>
+                <ForwardRef />
+                <p>
+                  100
+                </p>
+              </div>,
+            ],
+            "className": "job-card-header",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <ForwardRef />,
+                  <p>
+                    5/26/2019
+                  </p>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "5/26/2019",
+                  },
+                  "ref": null,
+                  "rendered": "5/26/2019",
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <ForwardRef />,
+                  <p>
+                    100
+                  </p>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": 100,
+                  },
+                  "ref": null,
+                  "rendered": 100,
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2>
+                Test
+              </h2>,
+              <div>
+                <ForwardRef />
+                <p
+                  className="truncate"
+                >
+                  address
+                </p>
+              </div>,
+              <div>
+                <ForwardRef />
+                <p
+                  className="truncate"
+                >
+                  some description
+                </p>
+              </div>,
+            ],
+            "className": "job-card-content",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Test",
+              },
+              "ref": null,
+              "rendered": "Test",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <ForwardRef />,
+                  <p
+                    className="truncate"
+                  >
+                    address
+                  </p>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "address",
+                    "className": "truncate",
+                  },
+                  "ref": null,
+                  "rendered": "address",
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <ForwardRef />,
+                  <p
+                    className="truncate"
+                  >
+                    some description
+                  </p>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "some description",
+                    "className": "truncate",
+                  },
+                  "ref": null,
+                  "rendered": "some description",
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <p>
+              IN PROGRESS
+            </p>,
+            "className": "job-card-footer",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "IN PROGRESS",
+            },
+            "ref": null,
+            "rendered": "IN PROGRESS",
+            "type": "p",
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <div
+          className="job-card"
+        >
+          <div
+            className="job-card-header"
+          >
+            <div>
+              <ForwardRef />
+              <p>
+                5/26/2019
+              </p>
+            </div>
+            <div>
+              <ForwardRef />
+              <p>
+                100
+              </p>
+            </div>
+          </div>
+          <div
+            className="job-card-content"
+          >
+            <h2>
+              Test
+            </h2>
+            <div>
+              <ForwardRef />
+              <p
+                className="truncate"
+              >
+                address
+              </p>
+            </div>
+            <div>
+              <ForwardRef />
+              <p
+                className="truncate"
+              >
+                some description
+              </p>
+            </div>
+          </div>
+          <div
+            className="job-card-footer"
+          >
+            <p>
+              IN PROGRESS
+            </p>
+          </div>
+        </div>,
+        "replace": false,
+        "to": Object {
+          "pathname": "/jobs/5c97b9cd0328e6b2aa76a361",
+          "state": Object {
+            "_id": "5c97b9cd0328e6b2aa76a361",
+            "address": "address",
+            "agent": "5c686e904cb1b33456b0be58",
+            "date": "2019-05-26T00:00:00.000Z",
+            "description": "some description",
+            "model": "5c686eb24cb1b33456b0be59",
+            "pay": 100,
+            "status": "in progress",
+            "title": "Test",
+          },
+        },
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="job-card-header"
+            >
+              <div>
+                <ForwardRef />
+                <p>
+                  5/26/2019
+                </p>
+              </div>
+              <div>
+                <ForwardRef />
+                <p>
+                  100
+                </p>
+              </div>
+            </div>,
+            <div
+              className="job-card-content"
+            >
+              <h2>
+                Test
+              </h2>
+              <div>
+                <ForwardRef />
+                <p
+                  className="truncate"
+                >
+                  address
+                </p>
+              </div>
+              <div>
+                <ForwardRef />
+                <p
+                  className="truncate"
+                >
+                  some description
+                </p>
+              </div>
+            </div>,
+            <div
+              className="job-card-footer"
+            >
+              <p>
+                IN PROGRESS
+              </p>
+            </div>,
+          ],
+          "className": "job-card",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div>
+                  <ForwardRef />
+                  <p>
+                    5/26/2019
+                  </p>
+                </div>,
+                <div>
+                  <ForwardRef />
+                  <p>
+                    100
+                  </p>
+                </div>,
+              ],
+              "className": "job-card-header",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <ForwardRef />,
+                    <p>
+                      5/26/2019
+                    </p>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "render": [Function],
+                    },
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "5/26/2019",
+                    },
+                    "ref": null,
+                    "rendered": "5/26/2019",
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <ForwardRef />,
+                    <p>
+                      100
+                    </p>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "render": [Function],
+                    },
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": 100,
+                    },
+                    "ref": null,
+                    "rendered": 100,
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2>
+                  Test
+                </h2>,
+                <div>
+                  <ForwardRef />
+                  <p
+                    className="truncate"
+                  >
+                    address
+                  </p>
+                </div>,
+                <div>
+                  <ForwardRef />
+                  <p
+                    className="truncate"
+                  >
+                    some description
+                  </p>
+                </div>,
+              ],
+              "className": "job-card-content",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Test",
+                },
+                "ref": null,
+                "rendered": "Test",
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <ForwardRef />,
+                    <p
+                      className="truncate"
+                    >
+                      address
+                    </p>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "render": [Function],
+                    },
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "address",
+                      "className": "truncate",
+                    },
+                    "ref": null,
+                    "rendered": "address",
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <ForwardRef />,
+                    <p
+                      className="truncate"
+                    >
+                      some description
+                    </p>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "render": [Function],
+                    },
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "some description",
+                      "className": "truncate",
+                    },
+                    "ref": null,
+                    "rendered": "some description",
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <p>
+                IN PROGRESS
+              </p>,
+              "className": "job-card-footer",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "IN PROGRESS",
+              },
+              "ref": null,
+              "rendered": "IN PROGRESS",
+              "type": "p",
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

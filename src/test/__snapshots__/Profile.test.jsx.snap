@@ -1,0 +1,878 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Profile should render Profile 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Profile
+    history={
+      Object {
+        "action": "REPLACE",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/profile",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+    location={
+      Object {
+        "search": Object {
+          "code": "test",
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <React.Fragment>
+        <PageHeader
+          backButton={false}
+          title="Profile"
+        />
+        <div
+          className="page"
+        >
+          <div
+            className="profile-details"
+          >
+            <ForwardRef />
+            <div>
+              <h1
+                className="profile-name"
+              >
+                name
+              </h1>
+              <p>
+                123
+              </p>
+            </div>
+          </div>
+          <div
+            className="profile-actions"
+          >
+            <button
+              onClick={[Function]}
+              type="button"
+            >
+              Connect to Google Calendar
+              <ForwardRef />
+            </button>
+            <button
+              onClick={[Function]}
+              type="button"
+            >
+              Edit my profile
+              <ForwardRef />
+            </button>
+            <button
+              onClick={[Function]}
+              type="button"
+            >
+              Logout
+              <ForwardRef />
+            </button>
+          </div>
+        </div>
+      </React.Fragment>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <PageHeader
+            backButton={false}
+            title="Profile"
+          />,
+          <div
+            className="page"
+          >
+            <div
+              className="profile-details"
+            >
+              <ForwardRef />
+              <div>
+                <h1
+                  className="profile-name"
+                >
+                  name
+                </h1>
+                <p>
+                  123
+                </p>
+              </div>
+            </div>
+            <div
+              className="profile-actions"
+            >
+              <button
+                onClick={[Function]}
+                type="button"
+              >
+                Connect to Google Calendar
+                <ForwardRef />
+              </button>
+              <button
+                onClick={[Function]}
+                type="button"
+              >
+                Edit my profile
+                <ForwardRef />
+              </button>
+              <button
+                onClick={[Function]}
+                type="button"
+              >
+                Logout
+                <ForwardRef />
+              </button>
+            </div>
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "action": undefined,
+            "actionAltText": undefined,
+            "actionIcon": undefined,
+            "backButton": false,
+            "goBackAction": undefined,
+            "history": undefined,
+            "title": "Profile",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="profile-details"
+              >
+                <ForwardRef />
+                <div>
+                  <h1
+                    className="profile-name"
+                  >
+                    name
+                  </h1>
+                  <p>
+                    123
+                  </p>
+                </div>
+              </div>,
+              false,
+              <div
+                className="profile-actions"
+              >
+                <button
+                  onClick={[Function]}
+                  type="button"
+                >
+                  Connect to Google Calendar
+                  <ForwardRef />
+                </button>
+                <button
+                  onClick={[Function]}
+                  type="button"
+                >
+                  Edit my profile
+                  <ForwardRef />
+                </button>
+                <button
+                  onClick={[Function]}
+                  type="button"
+                >
+                  Logout
+                  <ForwardRef />
+                </button>
+              </div>,
+            ],
+            "className": "page",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <ForwardRef />,
+                  <div>
+                    <h1
+                      className="profile-name"
+                    >
+                      name
+                    </h1>
+                    <p>
+                      123
+                    </p>
+                  </div>,
+                ],
+                "className": "profile-details",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <h1
+                        className="profile-name"
+                      >
+                        name
+                      </h1>,
+                      <p>
+                        123
+                      </p>,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "name",
+                        "className": "profile-name",
+                      },
+                      "ref": null,
+                      "rendered": "name",
+                      "type": "h1",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "123",
+                      },
+                      "ref": null,
+                      "rendered": "123",
+                      "type": "p",
+                    },
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+            false,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <button
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    Connect to Google Calendar
+                    <ForwardRef />
+                  </button>,
+                  <button
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    Edit my profile
+                    <ForwardRef />
+                  </button>,
+                  <button
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    Logout
+                    <ForwardRef />
+                  </button>,
+                ],
+                "className": "profile-actions",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Connect to Google Calendar",
+                      <ForwardRef />,
+                    ],
+                    "onClick": [Function],
+                    "type": "button",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Connect to Google Calendar",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {},
+                      "ref": null,
+                      "rendered": null,
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "render": [Function],
+                      },
+                    },
+                  ],
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Edit my profile",
+                      <ForwardRef />,
+                    ],
+                    "onClick": [Function],
+                    "type": "button",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Edit my profile",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {},
+                      "ref": null,
+                      "rendered": null,
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "render": [Function],
+                      },
+                    },
+                  ],
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Logout",
+                      <ForwardRef />,
+                    ],
+                    "onClick": [Function],
+                    "type": "button",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Logout",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {},
+                      "ref": null,
+                      "rendered": null,
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "render": [Function],
+                      },
+                    },
+                  ],
+                  "type": "button",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <React.Fragment>
+          <PageHeader
+            backButton={false}
+            title="Profile"
+          />
+          <div
+            className="page"
+          >
+            <div
+              className="profile-details"
+            >
+              <ForwardRef />
+              <div>
+                <h1
+                  className="profile-name"
+                >
+                  name
+                </h1>
+                <p>
+                  123
+                </p>
+              </div>
+            </div>
+            <div
+              className="profile-actions"
+            >
+              <button
+                onClick={[Function]}
+                type="button"
+              >
+                Connect to Google Calendar
+                <ForwardRef />
+              </button>
+              <button
+                onClick={[Function]}
+                type="button"
+              >
+                Edit my profile
+                <ForwardRef />
+              </button>
+              <button
+                onClick={[Function]}
+                type="button"
+              >
+                Logout
+                <ForwardRef />
+              </button>
+            </div>
+          </div>
+        </React.Fragment>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <PageHeader
+              backButton={false}
+              title="Profile"
+            />,
+            <div
+              className="page"
+            >
+              <div
+                className="profile-details"
+              >
+                <ForwardRef />
+                <div>
+                  <h1
+                    className="profile-name"
+                  >
+                    name
+                  </h1>
+                  <p>
+                    123
+                  </p>
+                </div>
+              </div>
+              <div
+                className="profile-actions"
+              >
+                <button
+                  onClick={[Function]}
+                  type="button"
+                >
+                  Connect to Google Calendar
+                  <ForwardRef />
+                </button>
+                <button
+                  onClick={[Function]}
+                  type="button"
+                >
+                  Edit my profile
+                  <ForwardRef />
+                </button>
+                <button
+                  onClick={[Function]}
+                  type="button"
+                >
+                  Logout
+                  <ForwardRef />
+                </button>
+              </div>
+            </div>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "action": undefined,
+              "actionAltText": undefined,
+              "actionIcon": undefined,
+              "backButton": false,
+              "goBackAction": undefined,
+              "history": undefined,
+              "title": "Profile",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="profile-details"
+                >
+                  <ForwardRef />
+                  <div>
+                    <h1
+                      className="profile-name"
+                    >
+                      name
+                    </h1>
+                    <p>
+                      123
+                    </p>
+                  </div>
+                </div>,
+                false,
+                <div
+                  className="profile-actions"
+                >
+                  <button
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    Connect to Google Calendar
+                    <ForwardRef />
+                  </button>
+                  <button
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    Edit my profile
+                    <ForwardRef />
+                  </button>
+                  <button
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    Logout
+                    <ForwardRef />
+                  </button>
+                </div>,
+              ],
+              "className": "page",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <ForwardRef />,
+                    <div>
+                      <h1
+                        className="profile-name"
+                      >
+                        name
+                      </h1>
+                      <p>
+                        123
+                      </p>
+                    </div>,
+                  ],
+                  "className": "profile-details",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "render": [Function],
+                    },
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <h1
+                          className="profile-name"
+                        >
+                          name
+                        </h1>,
+                        <p>
+                          123
+                        </p>,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "name",
+                          "className": "profile-name",
+                        },
+                        "ref": null,
+                        "rendered": "name",
+                        "type": "h1",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "123",
+                        },
+                        "ref": null,
+                        "rendered": "123",
+                        "type": "p",
+                      },
+                    ],
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
+              false,
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <button
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      Connect to Google Calendar
+                      <ForwardRef />
+                    </button>,
+                    <button
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      Edit my profile
+                      <ForwardRef />
+                    </button>,
+                    <button
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      Logout
+                      <ForwardRef />
+                    </button>,
+                  ],
+                  "className": "profile-actions",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "Connect to Google Calendar",
+                        <ForwardRef />,
+                      ],
+                      "onClick": [Function],
+                      "type": "button",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Connect to Google Calendar",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {},
+                        "ref": null,
+                        "rendered": null,
+                        "type": Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "render": [Function],
+                        },
+                      },
+                    ],
+                    "type": "button",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "Edit my profile",
+                        <ForwardRef />,
+                      ],
+                      "onClick": [Function],
+                      "type": "button",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Edit my profile",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {},
+                        "ref": null,
+                        "rendered": null,
+                        "type": Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "render": [Function],
+                        },
+                      },
+                    ],
+                    "type": "button",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "Logout",
+                        <ForwardRef />,
+                      ],
+                      "onClick": [Function],
+                      "type": "button",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Logout",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {},
+                        "ref": null,
+                        "rendered": null,
+                        "type": Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "render": [Function],
+                        },
+                      },
+                    ],
+                    "type": "button",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": Symbol(react.fragment),
+      },
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "context": Object {
+      "handleLogout": [MockFunction],
+      "user": Object {
+        "email": "email@email.com",
+        "name": "name",
+        "phoneNumber": "123",
+        "role": "agent",
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

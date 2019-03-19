@@ -1,0 +1,397 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MessageForm should render MessageForm 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Messages
+    chat={
+      Object {
+        "_id": "2",
+        "job": Object {
+          "_id": "1",
+          "title": "title",
+        },
+        "messages": Array [
+          Object {
+            "message": "hi",
+            "user": "3",
+          },
+        ],
+      }
+    }
+    socket={[MockFunction]}
+    user={
+      Object {
+        "_id": "3",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <div
+          className="job-chat-card"
+        >
+          <h2>
+            title
+          </h2>
+          <Link
+            replace={false}
+            to={
+              Object {
+                "pathname": "/jobs/1",
+                "state": Object {
+                  "_id": "1",
+                  "title": "title",
+                },
+              }
+            }
+          >
+            View
+          </Link>
+        </div>,
+        <div
+          className="messages"
+        >
+          <div
+            className="message sent"
+          >
+            <p>
+              hi
+            </p>
+          </div>
+          <div />
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2>
+              title
+            </h2>,
+            <Link
+              replace={false}
+              to={
+                Object {
+                  "pathname": "/jobs/1",
+                  "state": Object {
+                    "_id": "1",
+                    "title": "title",
+                  },
+                }
+              }
+            >
+              View
+            </Link>,
+          ],
+          "className": "job-chat-card",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "title",
+            },
+            "ref": null,
+            "rendered": "title",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "View",
+              "replace": false,
+              "to": Object {
+                "pathname": "/jobs/1",
+                "state": Object {
+                  "_id": "1",
+                  "title": "title",
+                },
+              },
+            },
+            "ref": null,
+            "rendered": "View",
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            Array [
+              <div
+                className="message sent"
+              >
+                <p>
+                  hi
+                </p>
+              </div>,
+            ],
+            <div />,
+          ],
+          "className": "messages",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "children": <p>
+                hi
+              </p>,
+              "className": "message sent",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "hi",
+              },
+              "ref": null,
+              "rendered": "hi",
+              "type": "p",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": Object {
+              "current": null,
+            },
+            "rendered": null,
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <div
+            className="job-chat-card"
+          >
+            <h2>
+              title
+            </h2>
+            <Link
+              replace={false}
+              to={
+                Object {
+                  "pathname": "/jobs/1",
+                  "state": Object {
+                    "_id": "1",
+                    "title": "title",
+                  },
+                }
+              }
+            >
+              View
+            </Link>
+          </div>,
+          <div
+            className="messages"
+          >
+            <div
+              className="message sent"
+            >
+              <p>
+                hi
+              </p>
+            </div>
+            <div />
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2>
+                title
+              </h2>,
+              <Link
+                replace={false}
+                to={
+                  Object {
+                    "pathname": "/jobs/1",
+                    "state": Object {
+                      "_id": "1",
+                      "title": "title",
+                    },
+                  }
+                }
+              >
+                View
+              </Link>,
+            ],
+            "className": "job-chat-card",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "title",
+              },
+              "ref": null,
+              "rendered": "title",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "View",
+                "replace": false,
+                "to": Object {
+                  "pathname": "/jobs/1",
+                  "state": Object {
+                    "_id": "1",
+                    "title": "title",
+                  },
+                },
+              },
+              "ref": null,
+              "rendered": "View",
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              Array [
+                <div
+                  className="message sent"
+                >
+                  <p>
+                    hi
+                  </p>
+                </div>,
+              ],
+              <div />,
+            ],
+            "className": "messages",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "children": <p>
+                  hi
+                </p>,
+                "className": "message sent",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "hi",
+                },
+                "ref": null,
+                "rendered": "hi",
+                "type": "p",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": Object {
+                "current": null,
+              },
+              "rendered": null,
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

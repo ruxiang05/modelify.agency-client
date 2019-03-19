@@ -60,7 +60,7 @@ const ProfileModelDetails = ({ user }) => {
 };
 
 ProfileModelDetails.propTypes = {
-  user: PropTypes.shape({}).isRequired,
+  user: PropTypes.object.isRequired,
 };
 
 export default ProfileModelDetails;

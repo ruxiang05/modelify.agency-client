@@ -66,7 +66,7 @@ PageHeader.propTypes = {
   action: PropTypes.func,
   actionIcon: PropTypes.string,
   actionAltText: PropTypes.string,
-  history: PropTypes.shape({}),
+  history: PropTypes.object,
   goBackAction: PropTypes.func,
 };
 

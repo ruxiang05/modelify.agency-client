@@ -29,7 +29,7 @@ class ModelCard extends React.Component {
     );
     return (
       <React.Fragment>
-        {selectModel instanceof Function && selectModel.length ? (
+        {selectModel.length ? (
           <button type="submit" onClick={this.handleClick}>
             {cardContent}
           </button>
