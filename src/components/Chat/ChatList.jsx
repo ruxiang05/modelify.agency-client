@@ -19,6 +19,7 @@ class ChatList extends React.Component {
     const token = getToken();
     api.chats.getChats(token).then((res) => {
       const { chats } = res;
+      console.log(res);
       this.setState({ chats });
     });
   }
