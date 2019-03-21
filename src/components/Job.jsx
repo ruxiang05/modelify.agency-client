@@ -5,6 +5,7 @@ import { ReactComponent as DateIcon } from '../assets/icons/calendar-day.svg';
 import { ReactComponent as LocationIcon } from '../assets/icons/map-marker-alt.svg';
 import { ReactComponent as NoteIcon } from '../assets/icons/sticky-note.svg';
 import { ReactComponent as PoundIcon } from '../assets/icons/pound-sign.svg';
+import { ReactComponent as ForwardIcon } from '../assets/icons/arrow-right.svg';
 import '../styles/job.scss';
 import api from '../api';
 import { getToken } from '../auth';
@@ -21,6 +22,7 @@ class Job extends React.Component {
     this.acceptJob = this.acceptJob.bind(this);
     this.completeJob = this.completeJob.bind(this);
     this.declineJob = this.declineJob.bind(this);
+    this.addToCalendar = this.addToCalendar.bind(this);
   }
 
   componentDidMount() {
@@ -56,6 +58,12 @@ class Job extends React.Component {
     });
   }
 
+  addToCalendar() {
+    const { location } = this.props;
+    const job = location.state;
+    api.googleCalendar.addEvent(getToken(), job);
+  }
+
   render() {
     const { location, history } = this.props;
     const {
@@ -87,6 +95,14 @@ class Job extends React.Component {
               {description}
             </li>
           </ul>
+          {status !== 'pending' && (
+          <div className="add-to-calendar">
+            <button type="button" onClick={this.addToCalendar}>
+                                Add to Calendar
+              <ForwardIcon />
+            </button>
+          </div>
+          )}
         </div>
         {user.role === 'model' && (
         <div className="job-actions">
