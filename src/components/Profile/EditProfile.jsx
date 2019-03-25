@@ -30,22 +30,29 @@ class EditProfile extends React.Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.formatModel = this.formatModel.bind(this);
-    this.uploadImage = this.uploadImage.bind(this);
+    this.handleImageChange = this.handleImageChange.bind(this);
   }
 
   handleSubmit(event) {
     event.preventDefault();
+    const token = getToken();
+    const { toggleEdit, updateUser } = this.props;
     const {
       email, name, role, image, phoneNumber, ...modelInfo
     } = this.state;
     let user = {
-      email, name, role, image, phoneNumber,
+      email, name, role, phoneNumber,
     };
     if (role === 'model') {
       user = { ...user, modelInfo: this.formatModel(modelInfo) };
     }
-    const { toggleEdit, updateUser } = this.props;
-    api.users.editProfile(getToken(), user).then((data) => {
+
+    const formData = new FormData();
+    formData.append('image', image);
+
+    api.users.uploadImage(token, formData);
+
+    api.users.editProfile(token, user).then((data) => {
       if (data.status === 200) {
         setToken(data.token);
         updateUser();
@@ -83,8 +90,12 @@ class EditProfile extends React.Component {
     this.setState(prevState => ({ ...prevState, [name]: value }));
   }
 
-  uploadImage(event) {
-    this.setState({image:  URL.createObjectURL(event.target.files[0])});
+  handleImageChange(event) {
+    this.setState({ image: event.target.files[0] });
+  }
+
+  uploadImage() {
+    const { image } = this.state;
   }
 
   render() {
@@ -99,8 +110,8 @@ class EditProfile extends React.Component {
           <form onSubmit={this.handleSubmit}>
             <h2>Account Details</h2>
             <div className="profile-image">
-              <label htmlFor="image-upload">{image ? <img src={image} alt="Profile" /> : <UnknownUserIcon />}</label>
-              <input type="file" accept="image/*" className="image-upload" id="image-upload" onChange={this.uploadImage} />
+              <label htmlFor="image-upload">{image ? <img src={URL.createObjectURL(image)} alt="Profile" /> : <UnknownUserIcon />}</label>
+              <input type="file" accept="image/*" className="image-upload" id="image-upload" onChange={this.handleImageChange} />
             </div>
             <FormInput
               type="text"

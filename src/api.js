@@ -31,6 +31,21 @@ const api = {
         return res.json();
       })
       .catch(err => err),
+    uploadImage: (token, data) => fetch(`${url}/users/image-upload`, {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+        Authorization: `Bearer ${token}`,
+
+      },
+    })
+      .then((res, err) => {
+        if (err) {
+          return err;
+        }
+        return res.json();
+      })
+      .catch(err => err),
   },
   agents: {
     getModels: token => fetch(`${url}/agents/`, {
