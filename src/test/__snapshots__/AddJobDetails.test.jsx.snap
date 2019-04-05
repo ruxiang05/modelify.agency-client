@@ -5,7 +5,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <AddJobDetails
     address=""
-    date=""
+    date="2019-04-08"
     description=""
     handleChange={[MockFunction]}
     model=""
@@ -50,7 +50,7 @@ ShallowWrapper {
               placeholder="Enter job date"
               title="Date"
               type="date"
-              value=""
+              value="2019-04-08"
             />
             <FormInput
               handleChange={[MockFunction]}
@@ -128,7 +128,7 @@ ShallowWrapper {
               placeholder="Enter job date"
               title="Date"
               type="date"
-              value=""
+              value="2019-04-08"
             />
             <FormInput
               handleChange={[MockFunction]}
@@ -187,7 +187,7 @@ ShallowWrapper {
                 placeholder="Enter job date"
                 title="Date"
                 type="date"
-                value=""
+                value="2019-04-08"
               />,
               <FormInput
                 handleChange={[MockFunction]}
@@ -252,7 +252,7 @@ ShallowWrapper {
                 "placeholder": "Enter job date",
                 "title": "Date",
                 "type": "date",
-                "value": "",
+                "value": "2019-04-08",
               },
               "ref": null,
               "rendered": null,
@@ -371,7 +371,7 @@ ShallowWrapper {
                 placeholder="Enter job date"
                 title="Date"
                 type="date"
-                value=""
+                value="2019-04-08"
               />
               <FormInput
                 handleChange={[MockFunction]}
@@ -449,7 +449,7 @@ ShallowWrapper {
                 placeholder="Enter job date"
                 title="Date"
                 type="date"
-                value=""
+                value="2019-04-08"
               />
               <FormInput
                 handleChange={[MockFunction]}
@@ -508,7 +508,7 @@ ShallowWrapper {
                   placeholder="Enter job date"
                   title="Date"
                   type="date"
-                  value=""
+                  value="2019-04-08"
                 />,
                 <FormInput
                   handleChange={[MockFunction]}
@@ -573,7 +573,7 @@ ShallowWrapper {
                   "placeholder": "Enter job date",
                   "title": "Date",
                   "type": "date",
-                  "value": "",
+                  "value": "2019-04-08",
                 },
                 "ref": null,
                 "rendered": null,

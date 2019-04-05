@@ -7,7 +7,7 @@ let wrapper;
 const values = {
   model: '',
   title: '',
-  date: '',
+  date: '2019-04-08',
   address: '',
   pay: '',
   description: '',
