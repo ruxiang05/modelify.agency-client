@@ -13,6 +13,7 @@ import AddModel from './AddModel';
 import ProtectedRoute from './ProtectedRoute';
 import Job from './Job';
 import Chat from './Chat/Chat';
+import ModelProfile from './ModelProfile';
 
 const Main = ({ user }) => (
   <Switch>
@@ -21,7 +22,7 @@ const Main = ({ user }) => (
     <Route path="/login" component={Login} />
     <ProtectedRoute path="/jobs" exact component={JobList} />
     {user && user.role === 'agent' && (
-    <ProtectedRoute path="/models" component={Models} />
+    <ProtectedRoute path="/models" exact component={Models} />
     )}
     {user && user.role === 'agent' && (
     <ProtectedRoute path="/jobs/new" component={AddJob} />
@@ -30,6 +31,9 @@ const Main = ({ user }) => (
     <ProtectedRoute path="/profile" component={Profile} />
     <ProtectedRoute path="/add-model" component={AddModel} />
     <ProtectedRoute path="/jobs/:id" component={Job} />
+    {user && user.role === 'agent' && (
+    <ProtectedRoute path="/models/:id" component={ModelProfile} />
+    )}
     <ProtectedRoute path="/chats/:id" component={Chat} />
     <Route component={NotFound} />
   </Switch>

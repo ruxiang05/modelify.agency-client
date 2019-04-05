@@ -22,7 +22,7 @@ beforeAll(() => {
 });
 
 beforeEach(() => {
-  wrapper = shallow(<ModelCard {...model} />, {
+  wrapper = shallow(<ModelCard model={model} />, {
     context: selectModelContext,
   });
 });
@@ -33,7 +33,7 @@ describe('ModelCard', () => {
   });
 
   it('should render link if selectModel is not provided', () => {
-    wrapper = shallow(<ModelCard {...model} />, {
+    wrapper = shallow(<ModelCard model={model} />, {
       context: { selectModel: () => {} },
     });
     expect(wrapper.find('Link').length).toBe(1);

@@ -75,10 +75,12 @@ class Profile extends React.Component {
             <PageHeader title="Profile" />
             <div className="page">
               <div className="profile-details">
-                <UnknownUserIcon />
-                <div>
-                  <h1 className="profile-name">{name}</h1>
-                  <p>{phoneNumber}</p>
+                <div className="profile-basic-details">
+                  <UnknownUserIcon />
+                  <div>
+                    <h1 className="profile-name">{name}</h1>
+                    <p>{phoneNumber}</p>
+                  </div>
                 </div>
               </div>
               {role === 'model' && <ProfileModelDetails user={user} />}
@@ -104,8 +106,8 @@ class Profile extends React.Component {
   }
 }
 Profile.propTypes = {
-  history: PropTypes.shape({}).isRequired,
-  location: PropTypes.shape({}).isRequired,
+  history: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired,
 };
 Profile.contextType = UserContext;
 export default Profile;

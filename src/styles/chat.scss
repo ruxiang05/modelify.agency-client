@@ -9,6 +9,7 @@
     display: flex;
     margin: 0.5rem;
     text-justify: auto;
+    font-size: 1rem;
 
     p {
         margin: 0;
@@ -40,6 +41,7 @@
     input {
         flex: 1 1 auto;
         border: none;
+        font-size: 1rem;
 
         &:focus {
             outline: none;

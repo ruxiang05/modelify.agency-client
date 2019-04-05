@@ -30,7 +30,7 @@ class ModelList extends React.Component {
           <ul>
             {models.map(model => (
               <li key={models.indexOf(model)}>
-                <ModelCard {...model} />
+                <ModelCard model={model} />
               </li>
             ))}
           </ul>

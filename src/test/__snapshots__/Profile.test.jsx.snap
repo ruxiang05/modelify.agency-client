@@ -57,16 +57,20 @@ ShallowWrapper {
           <div
             className="profile-details"
           >
-            <ForwardRef />
-            <div>
-              <h1
-                className="profile-name"
-              >
-                name
-              </h1>
-              <p>
-                123
-              </p>
+            <div
+              className="profile-basic-details"
+            >
+              <ForwardRef />
+              <div>
+                <h1
+                  className="profile-name"
+                >
+                  name
+                </h1>
+                <p>
+                  123
+                </p>
+              </div>
             </div>
           </div>
           <div
@@ -114,16 +118,20 @@ ShallowWrapper {
             <div
               className="profile-details"
             >
-              <ForwardRef />
-              <div>
-                <h1
-                  className="profile-name"
-                >
-                  name
-                </h1>
-                <p>
-                  123
-                </p>
+              <div
+                className="profile-basic-details"
+              >
+                <ForwardRef />
+                <div>
+                  <h1
+                    className="profile-name"
+                  >
+                    name
+                  </h1>
+                  <p>
+                    123
+                  </p>
+                </div>
               </div>
             </div>
             <div
@@ -182,16 +190,20 @@ ShallowWrapper {
               <div
                 className="profile-details"
               >
-                <ForwardRef />
-                <div>
-                  <h1
-                    className="profile-name"
-                  >
-                    name
-                  </h1>
-                  <p>
-                    123
-                  </p>
+                <div
+                  className="profile-basic-details"
+                >
+                  <ForwardRef />
+                  <div>
+                    <h1
+                      className="profile-name"
+                    >
+                      name
+                    </h1>
+                    <p>
+                      123
+                    </p>
+                  </div>
                 </div>
               </div>,
               false,
@@ -230,8 +242,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": Array [
-                  <ForwardRef />,
+                "children": <div
+                  className="profile-basic-details"
+                >
+                  <ForwardRef />
                   <div>
                     <h1
                       className="profile-name"
@@ -241,69 +255,92 @@ ShallowWrapper {
                     <p>
                       123
                     </p>
-                  </div>,
-                ],
+                  </div>
+                </div>,
                 "className": "profile-details",
               },
               "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {},
-                  "ref": null,
-                  "rendered": null,
-                  "type": Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "render": [Function],
-                  },
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <ForwardRef />,
+                    <div>
                       <h1
                         className="profile-name"
                       >
                         name
-                      </h1>,
+                      </h1>
                       <p>
                         123
-                      </p>,
-                    ],
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "name",
-                        "className": "profile-name",
-                      },
-                      "ref": null,
-                      "rendered": "name",
-                      "type": "h1",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "123",
-                      },
-                      "ref": null,
-                      "rendered": "123",
-                      "type": "p",
-                    },
+                      </p>
+                    </div>,
                   ],
-                  "type": "div",
+                  "className": "profile-basic-details",
                 },
-              ],
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "render": [Function],
+                    },
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <h1
+                          className="profile-name"
+                        >
+                          name
+                        </h1>,
+                        <p>
+                          123
+                        </p>,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "name",
+                          "className": "profile-name",
+                        },
+                        "ref": null,
+                        "rendered": "name",
+                        "type": "h1",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "123",
+                        },
+                        "ref": null,
+                        "rendered": "123",
+                        "type": "p",
+                      },
+                    ],
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
               "type": "div",
             },
             false,
@@ -457,16 +494,20 @@ ShallowWrapper {
             <div
               className="profile-details"
             >
-              <ForwardRef />
-              <div>
-                <h1
-                  className="profile-name"
-                >
-                  name
-                </h1>
-                <p>
-                  123
-                </p>
+              <div
+                className="profile-basic-details"
+              >
+                <ForwardRef />
+                <div>
+                  <h1
+                    className="profile-name"
+                  >
+                    name
+                  </h1>
+                  <p>
+                    123
+                  </p>
+                </div>
               </div>
             </div>
             <div
@@ -514,16 +555,20 @@ ShallowWrapper {
               <div
                 className="profile-details"
               >
-                <ForwardRef />
-                <div>
-                  <h1
-                    className="profile-name"
-                  >
-                    name
-                  </h1>
-                  <p>
-                    123
-                  </p>
+                <div
+                  className="profile-basic-details"
+                >
+                  <ForwardRef />
+                  <div>
+                    <h1
+                      className="profile-name"
+                    >
+                      name
+                    </h1>
+                    <p>
+                      123
+                    </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -582,16 +627,20 @@ ShallowWrapper {
                 <div
                   className="profile-details"
                 >
-                  <ForwardRef />
-                  <div>
-                    <h1
-                      className="profile-name"
-                    >
-                      name
-                    </h1>
-                    <p>
-                      123
-                    </p>
+                  <div
+                    className="profile-basic-details"
+                  >
+                    <ForwardRef />
+                    <div>
+                      <h1
+                        className="profile-name"
+                      >
+                        name
+                      </h1>
+                      <p>
+                        123
+                      </p>
+                    </div>
                   </div>
                 </div>,
                 false,
@@ -630,8 +679,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": Array [
-                    <ForwardRef />,
+                  "children": <div
+                    className="profile-basic-details"
+                  >
+                    <ForwardRef />
                     <div>
                       <h1
                         className="profile-name"
@@ -641,69 +692,92 @@ ShallowWrapper {
                       <p>
                         123
                       </p>
-                    </div>,
-                  ],
+                    </div>
+                  </div>,
                   "className": "profile-details",
                 },
                 "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "function",
-                    "props": Object {},
-                    "ref": null,
-                    "rendered": null,
-                    "type": Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "render": [Function],
-                    },
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <ForwardRef />,
+                      <div>
                         <h1
                           className="profile-name"
                         >
                           name
-                        </h1>,
+                        </h1>
                         <p>
                           123
-                        </p>,
-                      ],
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": "name",
-                          "className": "profile-name",
-                        },
-                        "ref": null,
-                        "rendered": "name",
-                        "type": "h1",
-                      },
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": "123",
-                        },
-                        "ref": null,
-                        "rendered": "123",
-                        "type": "p",
-                      },
+                        </p>
+                      </div>,
                     ],
-                    "type": "div",
+                    "className": "profile-basic-details",
                   },
-                ],
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {},
+                      "ref": null,
+                      "rendered": null,
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "render": [Function],
+                      },
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <h1
+                            className="profile-name"
+                          >
+                            name
+                          </h1>,
+                          <p>
+                            123
+                          </p>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "name",
+                            "className": "profile-name",
+                          },
+                          "ref": null,
+                          "rendered": "name",
+                          "type": "h1",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "123",
+                          },
+                          "ref": null,
+                          "rendered": "123",
+                          "type": "p",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                  ],
+                  "type": "div",
+                },
                 "type": "div",
               },
               false,

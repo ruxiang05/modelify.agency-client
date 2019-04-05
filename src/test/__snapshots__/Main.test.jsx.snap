@@ -46,6 +46,7 @@ ShallowWrapper {
         />,
         <ProtectedRoute
           component={[Function]}
+          exact={true}
           path="/models"
         />,
         <ProtectedRoute
@@ -68,6 +69,10 @@ ShallowWrapper {
         <ProtectedRoute
           component={[Function]}
           path="/jobs/:id"
+        />,
+        <ProtectedRoute
+          component={[Function]}
+          path="/models/:id"
         />,
         <ProtectedRoute
           component={[Function]}
@@ -137,6 +142,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "component": [Function],
+          "exact": true,
           "path": "/models",
         },
         "ref": null,
@@ -210,6 +216,18 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "component": [Function],
+          "path": "/models/:id",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "component": [Function],
           "path": "/chats/:id",
         },
         "ref": null,
@@ -258,6 +276,7 @@ ShallowWrapper {
           />,
           <ProtectedRoute
             component={[Function]}
+            exact={true}
             path="/models"
           />,
           <ProtectedRoute
@@ -280,6 +299,10 @@ ShallowWrapper {
           <ProtectedRoute
             component={[Function]}
             path="/jobs/:id"
+          />,
+          <ProtectedRoute
+            component={[Function]}
+            path="/models/:id"
           />,
           <ProtectedRoute
             component={[Function]}
@@ -349,6 +372,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "component": [Function],
+            "exact": true,
             "path": "/models",
           },
           "ref": null,
@@ -411,6 +435,18 @@ ShallowWrapper {
           "props": Object {
             "component": [Function],
             "path": "/jobs/:id",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "component": [Function],
+            "path": "/models/:id",
           },
           "ref": null,
           "rendered": null,
