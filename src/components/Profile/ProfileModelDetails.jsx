@@ -54,7 +54,7 @@ const ProfileModelDetails = ({ user }) => {
           </li>
         </div>
       </ul>
-      <p className="disclosure">Measurements are in cm</p>
+      <p className="disclosure">Measurements are in cm and kg</p>
     </div>
   );
 };

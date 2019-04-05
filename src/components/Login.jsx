@@ -60,7 +60,7 @@ class Login extends React.Component {
             name="password"
             title="Password"
             value={password}
-            placeholder="Enter your passowrd"
+            placeholder="Enter your password"
             handleChange={this.handleChange}
           />
           <div className="form-submit">

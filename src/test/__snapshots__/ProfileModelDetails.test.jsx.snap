@@ -113,7 +113,7 @@ ShallowWrapper {
         <p
           className="disclosure"
         >
-          Measurements are in cm
+          Measurements are in cm and kg
         </p>,
       ],
       "className": "profile-model-details",
@@ -515,11 +515,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Measurements are in cm",
+          "children": "Measurements are in cm and kg",
           "className": "disclosure",
         },
         "ref": null,
-        "rendered": "Measurements are in cm",
+        "rendered": "Measurements are in cm and kg",
         "type": "p",
       },
     ],
@@ -601,7 +601,7 @@ ShallowWrapper {
           <p
             className="disclosure"
           >
-            Measurements are in cm
+            Measurements are in cm and kg
           </p>,
         ],
         "className": "profile-model-details",
@@ -1003,11 +1003,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Measurements are in cm",
+            "children": "Measurements are in cm and kg",
             "className": "disclosure",
           },
           "ref": null,
-          "rendered": "Measurements are in cm",
+          "rendered": "Measurements are in cm and kg",
           "type": "p",
         },
       ],

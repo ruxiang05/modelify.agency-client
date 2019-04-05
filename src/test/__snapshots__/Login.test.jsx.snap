@@ -55,7 +55,7 @@ ShallowWrapper {
           <FormInput
             handleChange={[Function]}
             name="password"
-            placeholder="Enter your passowrd"
+            placeholder="Enter your password"
             title="Password"
             type="password"
             value=""
@@ -113,7 +113,7 @@ ShallowWrapper {
             <FormInput
               handleChange={[Function]}
               name="password"
-              placeholder="Enter your passowrd"
+              placeholder="Enter your password"
               title="Password"
               type="password"
               value=""
@@ -154,7 +154,7 @@ ShallowWrapper {
             "props": Object {
               "handleChange": [Function],
               "name": "password",
-              "placeholder": "Enter your passowrd",
+              "placeholder": "Enter your password",
               "title": "Password",
               "type": "password",
               "value": "",
@@ -264,7 +264,7 @@ ShallowWrapper {
             <FormInput
               handleChange={[Function]}
               name="password"
-              placeholder="Enter your passowrd"
+              placeholder="Enter your password"
               title="Password"
               type="password"
               value=""
@@ -322,7 +322,7 @@ ShallowWrapper {
               <FormInput
                 handleChange={[Function]}
                 name="password"
-                placeholder="Enter your passowrd"
+                placeholder="Enter your password"
                 title="Password"
                 type="password"
                 value=""
@@ -363,7 +363,7 @@ ShallowWrapper {
               "props": Object {
                 "handleChange": [Function],
                 "name": "password",
-                "placeholder": "Enter your passowrd",
+                "placeholder": "Enter your password",
                 "title": "Password",
                 "type": "password",
                 "value": "",

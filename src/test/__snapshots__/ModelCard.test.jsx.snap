@@ -4,9 +4,13 @@ exports[`ModelCard should render ModelCard 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ModelCard
-    _id="1"
-    email="email@email.com"
-    name="name"
+    model={
+      Object {
+        "_id": "1",
+        "email": "email@email.com",
+        "name": "name",
+      }
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -23,6 +27,7 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": <button
+        className="model-card-action"
         onClick={[Function]}
         type="submit"
       >
@@ -50,6 +55,7 @@ ShallowWrapper {
             name
           </p>
         </div>,
+        "className": "model-card-action",
         "onClick": [Function],
         "type": "submit",
       },
@@ -106,6 +112,7 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": <button
+          className="model-card-action"
           onClick={[Function]}
           type="submit"
         >
@@ -133,6 +140,7 @@ ShallowWrapper {
               name
             </p>
           </div>,
+          "className": "model-card-action",
           "onClick": [Function],
           "type": "submit",
         },

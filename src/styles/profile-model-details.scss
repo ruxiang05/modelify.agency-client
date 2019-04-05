@@ -1,11 +1,10 @@
 @import './vars.scss';
 
 .profile-model-details {
-    flex: 1 0 auto;
     border: 1px solid $dark;
     border-radius: 8px;
     margin: 0.5rem;
-    padding: 0.5rem 1rem;
+    padding: 1rem;
 
     h2 {
         margin: 0;
