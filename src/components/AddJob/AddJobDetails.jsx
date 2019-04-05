@@ -26,7 +26,7 @@ class AddJobDetails extends React.Component {
         <div className="page">
           <form>
             <FormInput type="text" value={title} name="title" title="Title" placeholder="Enter job short descritpion" handleChange={handleChange} />
-            <FormInput type="date" value={date} name="date" title="Date" placeholder="Enter job date" handleChange={handleChange} />
+            <FormInput type="date" value={date || new Date().toISOString().substr(0, 10)} name="date" title="Date" placeholder="Enter job date" handleChange={handleChange} />
             <FormInput type="text" value={address} name="address" title="Address" placeholder="Enter job address" handleChange={handleChange} />
             <FormInput type="number" value={pay} name="pay" title="Payment" placeholder="Enter payment amount" handleChange={handleChange} />
             <FormInput type="textarea" value={description} name="description" title="Description" placeholder="Enter job details" handleChange={handleChange} />
