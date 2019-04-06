@@ -1,3 +1,4 @@
+/* Uses methods and/or components from react */
 import React from 'react';
 import ChatCard from './ChatCard';
 import PageHeader from '../PageHeader';

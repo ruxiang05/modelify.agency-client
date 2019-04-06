@@ -1,3 +1,4 @@
+/* Mocks used for testing */
 const jobMock = {
   status: 'in progress',
   _id: '5c97b9cd0328e6b2aa76a361',

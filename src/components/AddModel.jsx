@@ -1,3 +1,4 @@
+/* Uses methods and/or components from react and prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
 import FormInput from './FormInput';
@@ -27,7 +28,7 @@ class AddModel extends React.Component {
     const { history } = this.props;
     event.preventDefault();
     api.agents.addModel(getToken(), { model: email });
-    history.push('/models');
+    history.push('/models'); // Redirect to models
   }
 
   render() {

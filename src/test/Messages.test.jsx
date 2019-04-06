@@ -1,3 +1,4 @@
+/* Uses methods and/or components from react, socket.io-client and enzyme */
 import React from 'react';
 import socket from 'socket.io-client';
 import { shallow } from 'enzyme';

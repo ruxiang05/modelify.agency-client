@@ -1,3 +1,4 @@
+/* Uses methods and/or components from react and enzyme */
 import React from 'react';
 import { shallow } from 'enzyme';
 import ChatCard from '../components/Chat/ChatCard';

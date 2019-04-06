@@ -1,3 +1,5 @@
+# Config for netlify, taken from their website https://www.netlify.com/docs/redirects/
+
 # Always redirect any request to our index.html
 # and return the status code 200.
 [[redirects]]

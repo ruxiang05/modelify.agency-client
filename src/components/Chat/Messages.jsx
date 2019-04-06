@@ -1,3 +1,4 @@
+/* Uses methods and/or components from react, prop-types, react-router-dom and socket.io-client */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';

@@ -1,3 +1,4 @@
+/* Uses methods and/or components from react, prop-types and enzyme */
 import React from 'react';
 import { shallow } from 'enzyme';
 import PropTypes from 'prop-types';

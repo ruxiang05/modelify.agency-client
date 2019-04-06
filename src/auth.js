@@ -1,3 +1,4 @@
+/* Helper module for LocalStorage, uses methods from jwt-decode */
 import jwtDecode from 'jwt-decode';
 
 const getToken = () => localStorage.getItem('jwt-token');

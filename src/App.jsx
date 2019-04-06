@@ -1,3 +1,4 @@
+/* Uses methods and/or components from react and socket.io-client */
 import React from 'react';
 import io from 'socket.io-client';
 import Header from './components/Header';

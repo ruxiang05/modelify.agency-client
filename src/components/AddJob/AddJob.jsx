@@ -1,3 +1,4 @@
+/* Uses methods and/or components from react and prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
 import AddJobDetails from './AddJobDetails';

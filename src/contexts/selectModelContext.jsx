@@ -1,3 +1,4 @@
+/* Uses methods and/or components from react */
 import React from 'react';
 
 export const SelectModel = React.createContext({

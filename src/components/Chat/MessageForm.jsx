@@ -1,3 +1,4 @@
+/* Uses methods and/or components from react,prop-types and socket.io-client */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { ReactComponent as SendIcon } from '../../assets/icons/arrow-circle-right.svg';
