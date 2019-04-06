@@ -1,3 +1,4 @@
+/* Uses methods and/or components from react and prop-types */
 import React from 'react';
 import { ReactComponent as NotFoundImage } from '../assets/icons/undraw_page_not_found_su7k.svg';
 import '../styles/404.scss';

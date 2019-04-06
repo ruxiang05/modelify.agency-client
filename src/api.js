@@ -1,3 +1,4 @@
+/* Helper class for fetch calls to backend API */
 const url = process.env.REACT_APP_API_URL;
 
 const api = {

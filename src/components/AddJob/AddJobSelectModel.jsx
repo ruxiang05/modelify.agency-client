@@ -1,3 +1,4 @@
+/* Uses methods and/or components from react */
 import React from 'react';
 import ModelList from '../ModelList';
 import PageHeader from '../PageHeader';

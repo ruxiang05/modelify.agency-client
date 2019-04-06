@@ -1,3 +1,4 @@
+/* Uses methods and/or components from react, prop-types, history and enzyme */
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import { createBrowserHistory } from 'history';

@@ -1,3 +1,4 @@
+/* Uses methods and/or components from react */
 import React from 'react';
 import logo from '../assets/icons/logo.png';
 import '../styles/logo.scss';

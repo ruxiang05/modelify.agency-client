@@ -1,3 +1,4 @@
+/* Uses methods and/or components from react and prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
 import FormInput from '../FormInput';
@@ -10,6 +11,7 @@ class AddJobDetails extends React.Component {
     this.saveAndContinue = this.saveAndContinue.bind(this);
   }
 
+  // Go to model selection
   saveAndContinue(event) {
     const { nextStep } = this.props;
     event.preventDefault();

@@ -1,3 +1,4 @@
+/* Uses methods and/or components from react */
 import React from 'react';
 import JobCard from './JobCard';
 import { getToken } from '../auth';

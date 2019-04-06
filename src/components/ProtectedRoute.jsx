@@ -1,3 +1,4 @@
+/* Uses methods and/or components from react, react-routed-dom and prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Redirect, Route } from 'react-router-dom';

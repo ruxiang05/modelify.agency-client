@@ -1,3 +1,4 @@
+/* Uses methods and/or components from react, history and enzyme */
 import React from 'react';
 import { shallow } from 'enzyme';
 import { createBrowserHistory } from 'history';
