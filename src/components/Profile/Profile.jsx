@@ -82,8 +82,8 @@ class Profile extends React.Component {
                     <p>{phoneNumber}</p>
                   </div>
                 </div>
+                {role === 'model' && <ProfileModelDetails user={user} />}
               </div>
-              {role === 'model' && <ProfileModelDetails user={user} />}
               <div className="profile-actions">
                 <button type="button" onClick={this.getAuthURL}>
                   Connect to Google Calendar
